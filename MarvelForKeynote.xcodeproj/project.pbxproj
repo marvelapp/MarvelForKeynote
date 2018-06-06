@@ -1,0 +1,1735 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2AA6561AEF3B66823B77AE22 /* Pods_MarvelForKeynote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF7F7D0CA0CE22EDEB87627D /* Pods_MarvelForKeynote.framework */; };
+		7D6A7155BBBFFAA3C995D086 /* Pods_MarvelForKeynoteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117C3EB158F92F4DDE37BE5D /* Pods_MarvelForKeynoteUITests.framework */; };
+		8203085420768716008942C1 /* Token+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8203085320768716008942C1 /* Token+Helpers.swift */; };
+		820308982077CB0F008942C1 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820308972077CB0F008942C1 /* Array.swift */; };
+		82032C40205AC95E00627F75 /* MarvelScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82032C3F205AC95E00627F75 /* MarvelScreen.swift */; };
+		82032C42205ACAE700627F75 /* MarvelContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82032C41205ACAE700627F75 /* MarvelContent.swift */; };
+		8259CBD920333DA500316ECB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8259CBD820333DA500316ECB /* AppDelegate.swift */; };
+		8259CBDB20333DA500316ECB /* SendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8259CBDA20333DA500316ECB /* SendViewController.swift */; };
+		8259CBDD20333DA500316ECB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8259CBDC20333DA500316ECB /* Assets.xcassets */; };
+		8259CBE020333DA500316ECB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8259CBDE20333DA500316ECB /* Main.storyboard */; };
+		8259CBEC20333DA500316ECB /* MarvelForKeynoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8259CBEB20333DA500316ECB /* MarvelForKeynoteTests.swift */; };
+		8259CBF720333DA500316ECB /* MarvelForKeynoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8259CBF620333DA500316ECB /* MarvelForKeynoteUITests.swift */; };
+		8259CC0520333DE900316ECB /* KeynoteExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8259CC0420333DE900316ECB /* KeynoteExporter.swift */; };
+		8259CC1A20338AEF00316ECB /* Keynote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8259CC1820338AEF00316ECB /* Keynote.swift */; };
+		8259CC1B20338AEF00316ECB /* KeynoteScripting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8259CC1920338AEF00316ECB /* KeynoteScripting.swift */; };
+		8259CC37203391CD00316ECB /* ScriptingUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8259CC35203391BE00316ECB /* ScriptingUtilities.framework */; };
+		8259CC38203391CD00316ECB /* ScriptingUtilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8259CC35203391BE00316ECB /* ScriptingUtilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8259CC3D203397C600316ECB /* DragView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8259CC3C203397C600316ECB /* DragView.swift */; };
+		8259CC43203490A900316ECB /* HexColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8259CC42203490A900316ECB /* HexColors.swift */; };
+		8259CC4D20349A6400316ECB /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8259CC4C20349A6400316ECB /* ConnectViewController.swift */; };
+		8259CC4F2034B2AB00316ECB /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8259CC4E2034B2AB00316ECB /* NavBarView.swift */; };
+		8259CC512035B4E700316ECB /* TitleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8259CC502035B4E700316ECB /* TitleTextField.swift */; };
+		8259CC622035E3AC00316ECB /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8259CC612035E3AC00316ECB /* MainWindowController.swift */; };
+		8281A8CD206AF5BF00BE32BA /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281A8CC206AF5BF00BE32BA /* AuthenticationManager.swift */; };
+		8281A8D7206BD82500BE32BA /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281A8D6206BD82500BE32BA /* Secrets.swift */; };
+		8281A8DF206BEAAC00BE32BA /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281A8DE206BEAAB00BE32BA /* Alert.swift */; };
+		8281A8E2206BF09700BE32BA /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8281A8E0206BF09700BE32BA /* Model.xcdatamodeld */; };
+		8286A8C820597C2100FE88CB /* SyncingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8286A8C720597C2100FE88CB /* SyncingViewController.swift */; };
+		8286AC1E205984AF00FE88CB /* aeroplane_104.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB76205984AE00FE88CB /* aeroplane_104.png */; };
+		8286AC1F205984AF00FE88CB /* aeroplane_110.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB77205984AE00FE88CB /* aeroplane_110.png */; };
+		8286AC20205984AF00FE88CB /* aeroplane_138.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB78205984AE00FE88CB /* aeroplane_138.png */; };
+		8286AC21205984AF00FE88CB /* aeroplane_38.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB79205984AE00FE88CB /* aeroplane_38.png */; };
+		8286AC22205984AF00FE88CB /* aeroplane_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB7A205984AE00FE88CB /* aeroplane_10.png */; };
+		8286AC23205984AF00FE88CB /* aeroplane_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB7B205984AE00FE88CB /* aeroplane_11.png */; };
+		8286AC24205984AF00FE88CB /* aeroplane_39.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB7C205984AE00FE88CB /* aeroplane_39.png */; };
+		8286AC25205984AF00FE88CB /* aeroplane_139.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB7D205984AE00FE88CB /* aeroplane_139.png */; };
+		8286AC26205984AF00FE88CB /* aeroplane_111.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB7E205984AE00FE88CB /* aeroplane_111.png */; };
+		8286AC27205984AF00FE88CB /* aeroplane_105.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB7F205984AE00FE88CB /* aeroplane_105.png */; };
+		8286AC28205984AF00FE88CB /* aeroplane_113.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB80205984AE00FE88CB /* aeroplane_113.png */; };
+		8286AC29205984AF00FE88CB /* aeroplane_107.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB81205984AE00FE88CB /* aeroplane_107.png */; };
+		8286AC2A205984AF00FE88CB /* aeroplane_13.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB82205984AE00FE88CB /* aeroplane_13.png */; };
+		8286AC2B205984AF00FE88CB /* aeroplane_12.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB83205984AE00FE88CB /* aeroplane_12.png */; };
+		8286AC2C205984AF00FE88CB /* aeroplane_106.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB84205984AE00FE88CB /* aeroplane_106.png */; };
+		8286AC2D205984AF00FE88CB /* aeroplane_112.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB85205984AE00FE88CB /* aeroplane_112.png */; };
+		8286AC2E205984AF00FE88CB /* aeroplane_116.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB86205984AE00FE88CB /* aeroplane_116.png */; };
+		8286AC2F205984AF00FE88CB /* aeroplane_102.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB87205984AE00FE88CB /* aeroplane_102.png */; };
+		8286AC30205984AF00FE88CB /* aeroplane_16.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB88205984AE00FE88CB /* aeroplane_16.png */; };
+		8286AC31205984AF00FE88CB /* aeroplane_17.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB89205984AE00FE88CB /* aeroplane_17.png */; };
+		8286AC32205984AF00FE88CB /* aeroplane_103.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB8A205984AE00FE88CB /* aeroplane_103.png */; };
+		8286AC33205984AF00FE88CB /* aeroplane_117.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB8B205984AE00FE88CB /* aeroplane_117.png */; };
+		8286AC34205984AF00FE88CB /* aeroplane_129.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB8C205984AE00FE88CB /* aeroplane_129.png */; };
+		8286AC35205984AF00FE88CB /* aeroplane_101.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB8D205984AE00FE88CB /* aeroplane_101.png */; };
+		8286AC36205984AF00FE88CB /* aeroplane_115.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB8E205984AE00FE88CB /* aeroplane_115.png */; };
+		8286AC37205984AF00FE88CB /* aeroplane_15.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB8F205984AE00FE88CB /* aeroplane_15.png */; };
+		8286AC38205984AF00FE88CB /* aeroplane_29.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB90205984AE00FE88CB /* aeroplane_29.png */; };
+		8286AC39205984AF00FE88CB /* aeroplane_28.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB91205984AE00FE88CB /* aeroplane_28.png */; };
+		8286AC3A205984AF00FE88CB /* aeroplane_14.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB92205984AE00FE88CB /* aeroplane_14.png */; };
+		8286AC3B205984AF00FE88CB /* aeroplane_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB93205984AE00FE88CB /* aeroplane_114.png */; };
+		8286AC3C205984AF00FE88CB /* aeroplane_100.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB94205984AE00FE88CB /* aeroplane_100.png */; };
+		8286AC3D205984AF00FE88CB /* aeroplane_128.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB95205984AE00FE88CB /* aeroplane_128.png */; };
+		8286AC3E205984AF00FE88CB /* aeroplane_167.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB96205984AE00FE88CB /* aeroplane_167.png */; };
+		8286AC3F205984AF00FE88CB /* aeroplane_98.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB97205984AE00FE88CB /* aeroplane_98.png */; };
+		8286AC40205984AF00FE88CB /* aeroplane_73.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB98205984AE00FE88CB /* aeroplane_73.png */; };
+		8286AC41205984AF00FE88CB /* aeroplane_67.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB99205984AE00FE88CB /* aeroplane_67.png */; };
+		8286AC42205984AF00FE88CB /* aeroplane_66.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB9A205984AE00FE88CB /* aeroplane_66.png */; };
+		8286AC43205984AF00FE88CB /* aeroplane_72.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB9B205984AE00FE88CB /* aeroplane_72.png */; };
+		8286AC44205984AF00FE88CB /* aeroplane_99.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB9C205984AE00FE88CB /* aeroplane_99.png */; };
+		8286AC45205984AF00FE88CB /* aeroplane_166.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB9D205984AE00FE88CB /* aeroplane_166.png */; };
+		8286AC46205984AF00FE88CB /* aeroplane_164.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB9E205984AE00FE88CB /* aeroplane_164.png */; };
+		8286AC47205984AF00FE88CB /* aeroplane_158.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AB9F205984AE00FE88CB /* aeroplane_158.png */; };
+		8286AC48205984AF00FE88CB /* aeroplane_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABA0205984AE00FE88CB /* aeroplane_8.png */; };
+		8286AC49205984AF00FE88CB /* aeroplane_58.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABA1205984AE00FE88CB /* aeroplane_58.png */; };
+		8286AC4A205984AF00FE88CB /* aeroplane_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABA2205984AE00FE88CB /* aeroplane_64.png */; };
+		8286AC4B205984AF00FE88CB /* aeroplane_70.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABA3205984AE00FE88CB /* aeroplane_70.png */; };
+		8286AC4C205984AF00FE88CB /* aeroplane_71.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABA4205984AE00FE88CB /* aeroplane_71.png */; };
+		8286AC4D205984AF00FE88CB /* aeroplane_65.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABA5205984AE00FE88CB /* aeroplane_65.png */; };
+		8286AC4E205984AF00FE88CB /* aeroplane_59.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABA6205984AE00FE88CB /* aeroplane_59.png */; };
+		8286AC4F205984AF00FE88CB /* aeroplane_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABA7205984AE00FE88CB /* aeroplane_9.png */; };
+		8286AC50205984AF00FE88CB /* aeroplane_159.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABA8205984AE00FE88CB /* aeroplane_159.png */; };
+		8286AC51205984AF00FE88CB /* aeroplane_165.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABA9205984AE00FE88CB /* aeroplane_165.png */; };
+		8286AC52205984AF00FE88CB /* aeroplane_149.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABAA205984AE00FE88CB /* aeroplane_149.png */; };
+		8286AC53205984AF00FE88CB /* aeroplane_161.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABAB205984AE00FE88CB /* aeroplane_161.png */; };
+		8286AC54205984AF00FE88CB /* aeroplane_61.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABAC205984AE00FE88CB /* aeroplane_61.png */; };
+		8286AC55205984AF00FE88CB /* aeroplane_75.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABAD205984AE00FE88CB /* aeroplane_75.png */; };
+		8286AC56205984AF00FE88CB /* aeroplane_49.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABAE205984AE00FE88CB /* aeroplane_49.png */; };
+		8286AC57205984AF00FE88CB /* aeroplane_48.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABAF205984AE00FE88CB /* aeroplane_48.png */; };
+		8286AC58205984AF00FE88CB /* aeroplane_74.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABB0205984AE00FE88CB /* aeroplane_74.png */; };
+		8286AC59205984AF00FE88CB /* aeroplane_60.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABB1205984AE00FE88CB /* aeroplane_60.png */; };
+		8286AC5A205984AF00FE88CB /* aeroplane_160.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABB2205984AE00FE88CB /* aeroplane_160.png */; };
+		8286AC5B205984AF00FE88CB /* aeroplane_148.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABB3205984AE00FE88CB /* aeroplane_148.png */; };
+		8286AC5C205984AF00FE88CB /* aeroplane_162.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABB4205984AE00FE88CB /* aeroplane_162.png */; };
+		8286AC5D205984AF00FE88CB /* aeroplane_89.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABB5205984AE00FE88CB /* aeroplane_89.png */; };
+		8286AC5E205984AF00FE88CB /* aeroplane_76.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABB6205984AE00FE88CB /* aeroplane_76.png */; };
+		8286AC5F205984AF00FE88CB /* aeroplane_62.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABB7205984AE00FE88CB /* aeroplane_62.png */; };
+		8286AC60205984AF00FE88CB /* aeroplane_63.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABB8205984AE00FE88CB /* aeroplane_63.png */; };
+		8286AC61205984AF00FE88CB /* aeroplane_77.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABB9205984AE00FE88CB /* aeroplane_77.png */; };
+		8286AC62205984AF00FE88CB /* aeroplane_88.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABBA205984AE00FE88CB /* aeroplane_88.png */; };
+		8286AC63205984AF00FE88CB /* aeroplane_163.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABBB205984AE00FE88CB /* aeroplane_163.png */; };
+		8286AC64205984AF00FE88CB /* aeroplane_146.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABBC205984AE00FE88CB /* aeroplane_146.png */; };
+		8286AC65205984AF00FE88CB /* aeroplane_152.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABBD205984AE00FE88CB /* aeroplane_152.png */; };
+		8286AC66205984AF00FE88CB /* aeroplane_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABBE205984AE00FE88CB /* aeroplane_2.png */; };
+		8286AC67205984AF00FE88CB /* aeroplane_91.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABBF205984AE00FE88CB /* aeroplane_91.png */; };
+		8286AC68205984AF00FE88CB /* aeroplane_85.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABC0205984AE00FE88CB /* aeroplane_85.png */; };
+		8286AC69205984AF00FE88CB /* aeroplane_52.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABC1205984AE00FE88CB /* aeroplane_52.png */; };
+		8286AC6A205984AF00FE88CB /* aeroplane_46.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABC2205984AE00FE88CB /* aeroplane_46.png */; };
+		8286AC6B205984AF00FE88CB /* aeroplane_47.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABC3205984AE00FE88CB /* aeroplane_47.png */; };
+		8286AC6C205984AF00FE88CB /* aeroplane_53.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABC4205984AE00FE88CB /* aeroplane_53.png */; };
+		8286AC6D205984AF00FE88CB /* aeroplane_84.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABC5205984AE00FE88CB /* aeroplane_84.png */; };
+		8286AC6E205984AF00FE88CB /* aeroplane_90.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABC6205984AE00FE88CB /* aeroplane_90.png */; };
+		8286AC6F205984AF00FE88CB /* aeroplane_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABC7205984AE00FE88CB /* aeroplane_3.png */; };
+		8286AC70205984AF00FE88CB /* aeroplane_153.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABC8205984AE00FE88CB /* aeroplane_153.png */; };
+		8286AC71205984AF00FE88CB /* aeroplane_147.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABC9205984AE00FE88CB /* aeroplane_147.png */; };
+		8286AC72205984AF00FE88CB /* aeroplane_151.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABCA205984AE00FE88CB /* aeroplane_151.png */; };
+		8286AC73205984AF00FE88CB /* aeroplane_145.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABCB205984AE00FE88CB /* aeroplane_145.png */; };
+		8286AC74205984AF00FE88CB /* aeroplane_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABCC205984AE00FE88CB /* aeroplane_1.png */; };
+		8286AC75205984AF00FE88CB /* aeroplane_86.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABCD205984AE00FE88CB /* aeroplane_86.png */; };
+		8286AC76205984AF00FE88CB /* aeroplane_92.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABCE205984AE00FE88CB /* aeroplane_92.png */; };
+		8286AC77205984AF00FE88CB /* aeroplane_79.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABCF205984AE00FE88CB /* aeroplane_79.png */; };
+		8286AC78205984AF00FE88CB /* aeroplane_45.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABD0205984AE00FE88CB /* aeroplane_45.png */; };
+		8286AC79205984AF00FE88CB /* aeroplane_51.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABD1205984AE00FE88CB /* aeroplane_51.png */; };
+		8286AC7A205984AF00FE88CB /* aeroplane_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABD2205984AE00FE88CB /* aeroplane_50.png */; };
+		8286AC7B205984AF00FE88CB /* aeroplane_44.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABD3205984AE00FE88CB /* aeroplane_44.png */; };
+		8286AC7C205984AF00FE88CB /* aeroplane_78.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABD4205984AE00FE88CB /* aeroplane_78.png */; };
+		8286AC7D205984AF00FE88CB /* aeroplane_93.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABD5205984AE00FE88CB /* aeroplane_93.png */; };
+		8286AC7E205984AF00FE88CB /* aeroplane_87.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABD6205984AE00FE88CB /* aeroplane_87.png */; };
+		8286AC7F205984AF00FE88CB /* aeroplane_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABD7205984AE00FE88CB /* aeroplane_0.png */; };
+		8286AC80205984AF00FE88CB /* aeroplane_144.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABD8205984AE00FE88CB /* aeroplane_144.png */; };
+		8286AC81205984AF00FE88CB /* aeroplane_150.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABD9205984AE00FE88CB /* aeroplane_150.png */; };
+		8286AC82205984AF00FE88CB /* aeroplane_154.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABDA205984AE00FE88CB /* aeroplane_154.png */; };
+		8286AC83205984AF00FE88CB /* aeroplane_140.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABDB205984AE00FE88CB /* aeroplane_140.png */; };
+		8286AC84205984AF00FE88CB /* aeroplane_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABDC205984AE00FE88CB /* aeroplane_4.png */; };
+		8286AC85205984AF00FE88CB /* aeroplane_83.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABDD205984AE00FE88CB /* aeroplane_83.png */; };
+		8286AC86205984AF00FE88CB /* aeroplane_97.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABDE205984AE00FE88CB /* aeroplane_97.png */; };
+		8286AC87205984AF00FE88CB /* aeroplane_40.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABDF205984AE00FE88CB /* aeroplane_40.png */; };
+		8286AC88205984AF00FE88CB /* aeroplane_54.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABE0205984AE00FE88CB /* aeroplane_54.png */; };
+		8286AC89205984AF00FE88CB /* aeroplane_68.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABE1205984AE00FE88CB /* aeroplane_68.png */; };
+		8286AC8A205984AF00FE88CB /* aeroplane_69.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABE2205984AE00FE88CB /* aeroplane_69.png */; };
+		8286AC8B205984AF00FE88CB /* aeroplane_55.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABE3205984AE00FE88CB /* aeroplane_55.png */; };
+		8286AC8C205984AF00FE88CB /* aeroplane_41.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABE4205984AE00FE88CB /* aeroplane_41.png */; };
+		8286AC8D205984AF00FE88CB /* aeroplane_96.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABE5205984AE00FE88CB /* aeroplane_96.png */; };
+		8286AC8E205984AF00FE88CB /* aeroplane_82.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABE6205984AE00FE88CB /* aeroplane_82.png */; };
+		8286AC8F205984AF00FE88CB /* aeroplane_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABE7205984AE00FE88CB /* aeroplane_5.png */; };
+		8286AC90205984AF00FE88CB /* aeroplane_141.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABE8205984AE00FE88CB /* aeroplane_141.png */; };
+		8286AC91205984AF00FE88CB /* aeroplane_155.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABE9205984AE00FE88CB /* aeroplane_155.png */; };
+		8286AC92205984AF00FE88CB /* aeroplane_143.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABEA205984AE00FE88CB /* aeroplane_143.png */; };
+		8286AC93205984AF00FE88CB /* aeroplane_157.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABEB205984AE00FE88CB /* aeroplane_157.png */; };
+		8286AC94205984AF00FE88CB /* aeroplane_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABEC205984AE00FE88CB /* aeroplane_7.png */; };
+		8286AC95205984AF00FE88CB /* aeroplane_94.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABED205984AE00FE88CB /* aeroplane_94.png */; };
+		8286AC96205984AF00FE88CB /* aeroplane_80.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABEE205984AE00FE88CB /* aeroplane_80.png */; };
+		8286AC97205984AF00FE88CB /* aeroplane_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABEF205984AE00FE88CB /* aeroplane_57.png */; };
+		8286AC98205984AF00FE88CB /* aeroplane_43.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABF0205984AE00FE88CB /* aeroplane_43.png */; };
+		8286AC99205984AF00FE88CB /* aeroplane_42.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABF1205984AE00FE88CB /* aeroplane_42.png */; };
+		8286AC9A205984AF00FE88CB /* aeroplane_56.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABF2205984AE00FE88CB /* aeroplane_56.png */; };
+		8286AC9B205984AF00FE88CB /* aeroplane_81.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABF3205984AE00FE88CB /* aeroplane_81.png */; };
+		8286AC9C205984AF00FE88CB /* aeroplane_95.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABF4205984AE00FE88CB /* aeroplane_95.png */; };
+		8286AC9D205984AF00FE88CB /* aeroplane_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABF5205984AE00FE88CB /* aeroplane_6.png */; };
+		8286AC9E205984AF00FE88CB /* aeroplane_156.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABF6205984AE00FE88CB /* aeroplane_156.png */; };
+		8286AC9F205984AF00FE88CB /* aeroplane_142.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABF7205984AE00FE88CB /* aeroplane_142.png */; };
+		8286ACA0205984AF00FE88CB /* aeroplane_125.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABF8205984AE00FE88CB /* aeroplane_125.png */; };
+		8286ACA1205984AF00FE88CB /* aeroplane_131.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABF9205984AE00FE88CB /* aeroplane_131.png */; };
+		8286ACA2205984AF00FE88CB /* aeroplane_119.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABFA205984AE00FE88CB /* aeroplane_119.png */; };
+		8286ACA3205984AF00FE88CB /* aeroplane_19.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABFB205984AE00FE88CB /* aeroplane_19.png */; };
+		8286ACA4205984AF00FE88CB /* aeroplane_31.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABFC205984AE00FE88CB /* aeroplane_31.png */; };
+		8286ACA5205984AF00FE88CB /* aeroplane_25.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABFD205984AE00FE88CB /* aeroplane_25.png */; };
+		8286ACA6205984AF00FE88CB /* aeroplane_24.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABFE205984AE00FE88CB /* aeroplane_24.png */; };
+		8286ACA7205984AF00FE88CB /* aeroplane_30.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286ABFF205984AE00FE88CB /* aeroplane_30.png */; };
+		8286ACA8205984AF00FE88CB /* aeroplane_18.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AC00205984AE00FE88CB /* aeroplane_18.png */; };
+		8286ACA9205984AF00FE88CB /* aeroplane_118.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AC01205984AE00FE88CB /* aeroplane_118.png */; };
+		8286ACAA205984AF00FE88CB /* aeroplane_130.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AC02205984AE00FE88CB /* aeroplane_130.png */; };
+		8286ACAB205984AF00FE88CB /* aeroplane_124.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AC03205984AE00FE88CB /* aeroplane_124.png */; };
+		8286ACAC205984AF00FE88CB /* aeroplane_132.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AC04205984AE00FE88CB /* aeroplane_132.png */; };
+		8286ACAD205984AF00FE88CB /* aeroplane_126.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AC05205984AF00FE88CB /* aeroplane_126.png */; };
+		8286ACAE205984AF00FE88CB /* aeroplane_26.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AC06205984AF00FE88CB /* aeroplane_26.png */; };
+		8286ACAF205984AF00FE88CB /* aeroplane_32.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AC07205984AF00FE88CB /* aeroplane_32.png */; };
+		8286ACB0205984AF00FE88CB /* aeroplane_33.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AC08205984AF00FE88CB /* aeroplane_33.png */; };
+		8286ACB1205984AF00FE88CB /* aeroplane_27.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AC09205984AF00FE88CB /* aeroplane_27.png */; };
+		8286ACB2205984AF00FE88CB /* aeroplane_127.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AC0A205984AF00FE88CB /* aeroplane_127.png */; };
+		8286ACB3205984AF00FE88CB /* aeroplane_133.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AC0B205984AF00FE88CB /* aeroplane_133.png */; };
+		8286ACB4205984AF00FE88CB /* aeroplane_137.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AC0C205984AF00FE88CB /* aeroplane_137.png */; };
+		8286ACB5205984AF00FE88CB /* aeroplane_123.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AC0D205984AF00FE88CB /* aeroplane_123.png */; };
+		8286ACB6205984AF00FE88CB /* aeroplane_23.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AC0E205984AF00FE88CB /* aeroplane_23.png */; };
+		8286ACB7205984AF00FE88CB /* aeroplane_37.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AC0F205984AF00FE88CB /* aeroplane_37.png */; };
+		8286ACB8205984AF00FE88CB /* aeroplane_36.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AC10205984AF00FE88CB /* aeroplane_36.png */; };
+		8286ACB9205984AF00FE88CB /* aeroplane_22.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AC11205984AF00FE88CB /* aeroplane_22.png */; };
+		8286ACBA205984AF00FE88CB /* aeroplane_122.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AC12205984AF00FE88CB /* aeroplane_122.png */; };
+		8286ACBB205984AF00FE88CB /* aeroplane_136.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AC13205984AF00FE88CB /* aeroplane_136.png */; };
+		8286ACBC205984AF00FE88CB /* aeroplane_108.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AC14205984AF00FE88CB /* aeroplane_108.png */; };
+		8286ACBD205984AF00FE88CB /* aeroplane_120.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AC15205984AF00FE88CB /* aeroplane_120.png */; };
+		8286ACBE205984AF00FE88CB /* aeroplane_134.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AC16205984AF00FE88CB /* aeroplane_134.png */; };
+		8286ACBF205984AF00FE88CB /* aeroplane_34.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AC17205984AF00FE88CB /* aeroplane_34.png */; };
+		8286ACC0205984AF00FE88CB /* aeroplane_20.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AC18205984AF00FE88CB /* aeroplane_20.png */; };
+		8286ACC1205984AF00FE88CB /* aeroplane_21.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AC19205984AF00FE88CB /* aeroplane_21.png */; };
+		8286ACC2205984AF00FE88CB /* aeroplane_35.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AC1A205984AF00FE88CB /* aeroplane_35.png */; };
+		8286ACC3205984AF00FE88CB /* aeroplane_135.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AC1B205984AF00FE88CB /* aeroplane_135.png */; };
+		8286ACC4205984AF00FE88CB /* aeroplane_121.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AC1C205984AF00FE88CB /* aeroplane_121.png */; };
+		8286ACC5205984AF00FE88CB /* aeroplane_109.png in Resources */ = {isa = PBXBuildFile; fileRef = 8286AC1D205984AF00FE88CB /* aeroplane_109.png */; };
+		82CD72A9204D732D00E2D93B /* NoFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CD72A8204D732D00E2D93B /* NoFileViewController.swift */; };
+		82CD72AC204D75B100E2D93B /* SetFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CD72AB204D75B100E2D93B /* SetFileViewController.swift */; };
+		82CD72AE204D848A00E2D93B /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CD72AD204D848A00E2D93B /* Button.swift */; };
+		82CD72B2204D936B00E2D93B /* Calls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CD72B1204D936B00E2D93B /* Calls.swift */; };
+		82CD72BB204D9CF300E2D93B /* MarvelProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CD72BA204D9CF300E2D93B /* MarvelProject.swift */; };
+		82CD72C5204DC50E00E2D93B /* NSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CD72C4204DC50E00E2D93B /* NSButton.swift */; };
+		82D77957205BE50500408A37 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D77956205BE50500408A37 /* Data.swift */; };
+		82D77959205BE9AE00408A37 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D77958205BE9AE00408A37 /* Request.swift */; };
+		82D77967205C0E0000408A37 /* SyncingOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D77966205C0E0000408A37 /* SyncingOperations.swift */; };
+		82D7796A205C0E8700408A37 /* SyncingOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D77969205C0E8700408A37 /* SyncingOperation.swift */; };
+		82D7796C205C13B300408A37 /* AsynchronousOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D7796B205C13B300408A37 /* AsynchronousOperation.swift */; };
+		AD8A4F3381550F3BC667FF65 /* Pods_MarvelForKeynoteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69D79EF3ACEBA8F49281AB86 /* Pods_MarvelForKeynoteTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8259CBE820333DA500316ECB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8259CBCD20333DA400316ECB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8259CBD420333DA500316ECB;
+			remoteInfo = KeynoteToMarvel;
+		};
+		8259CBF320333DA500316ECB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8259CBCD20333DA400316ECB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8259CBD420333DA500316ECB;
+			remoteInfo = KeynoteToMarvel;
+		};
+		8259CC34203391BE00316ECB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8259CC30203391BE00316ECB /* ScriptingUtilities.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E6981C631A86F52B0097ED59;
+			remoteInfo = ScriptingUtilities;
+		};
+		8259CC39203391CD00316ECB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8259CC30203391BE00316ECB /* ScriptingUtilities.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E6981C621A86F52B0097ED59;
+			remoteInfo = ScriptingUtilities;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8259CC3B203391CD00316ECB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8259CC38203391CD00316ECB /* ScriptingUtilities.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0462AF2E09E1AD01442F047F /* Pods-MarvelForKeynoteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelForKeynoteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarvelForKeynoteUITests/Pods-MarvelForKeynoteUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0E110D18BEBD338A30FF9CB1 /* Pods-MarvelForKeynoteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelForKeynoteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarvelForKeynoteTests/Pods-MarvelForKeynoteTests.release.xcconfig"; sourceTree = "<group>"; };
+		117C3EB158F92F4DDE37BE5D /* Pods_MarvelForKeynoteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarvelForKeynoteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34BBE71CD40B8DE45B609C61 /* Pods-MarvelForKeynote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelForKeynote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarvelForKeynote/Pods-MarvelForKeynote.debug.xcconfig"; sourceTree = "<group>"; };
+		528D83B86B0670B679DEE840 /* Pods-MarvelForKeynoteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelForKeynoteUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarvelForKeynoteUITests/Pods-MarvelForKeynoteUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		69D79EF3ACEBA8F49281AB86 /* Pods_MarvelForKeynoteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarvelForKeynoteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8203085320768716008942C1 /* Token+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Token+Helpers.swift"; sourceTree = "<group>"; };
+		820308972077CB0F008942C1 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		82032C3F205AC95E00627F75 /* MarvelScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelScreen.swift; sourceTree = "<group>"; };
+		82032C41205ACAE700627F75 /* MarvelContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelContent.swift; sourceTree = "<group>"; };
+		82203A82207B80D400BB80AC /* MarvelForKeynote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MarvelForKeynote.entitlements; sourceTree = "<group>"; };
+		8259CBD520333DA500316ECB /* Marvel for Keynote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Marvel for Keynote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8259CBD820333DA500316ECB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8259CBDA20333DA500316ECB /* SendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendViewController.swift; sourceTree = "<group>"; };
+		8259CBDC20333DA500316ECB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8259CBDF20333DA500316ECB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8259CBE120333DA500316ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8259CBE720333DA500316ECB /* MarvelForKeynoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelForKeynoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8259CBEB20333DA500316ECB /* MarvelForKeynoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelForKeynoteTests.swift; sourceTree = "<group>"; };
+		8259CBED20333DA500316ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8259CBF220333DA500316ECB /* MarvelForKeynoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelForKeynoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8259CBF620333DA500316ECB /* MarvelForKeynoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelForKeynoteUITests.swift; sourceTree = "<group>"; };
+		8259CBF820333DA500316ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8259CC0420333DE900316ECB /* KeynoteExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeynoteExporter.swift; sourceTree = "<group>"; };
+		8259CC1820338AEF00316ECB /* Keynote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keynote.swift; sourceTree = "<group>"; };
+		8259CC1920338AEF00316ECB /* KeynoteScripting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeynoteScripting.swift; sourceTree = "<group>"; };
+		8259CC30203391BE00316ECB /* ScriptingUtilities.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ScriptingUtilities.xcodeproj; path = ScriptingUtilities/ScriptingUtilities.xcodeproj; sourceTree = SOURCE_ROOT; };
+		8259CC3C203397C600316ECB /* DragView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragView.swift; sourceTree = "<group>"; };
+		8259CC42203490A900316ECB /* HexColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexColors.swift; sourceTree = "<group>"; };
+		8259CC4C20349A6400316ECB /* ConnectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectViewController.swift; sourceTree = "<group>"; };
+		8259CC4E2034B2AB00316ECB /* NavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
+		8259CC502035B4E700316ECB /* TitleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTextField.swift; sourceTree = "<group>"; };
+		8259CC612035E3AC00316ECB /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		8281A8CC206AF5BF00BE32BA /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		8281A8D6206BD82500BE32BA /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		8281A8DE206BEAAB00BE32BA /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		8281A8E1206BF09700BE32BA /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		8286A8C720597C2100FE88CB /* SyncingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncingViewController.swift; sourceTree = "<group>"; };
+		8286AB76205984AE00FE88CB /* aeroplane_104.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_104.png; sourceTree = "<group>"; };
+		8286AB77205984AE00FE88CB /* aeroplane_110.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_110.png; sourceTree = "<group>"; };
+		8286AB78205984AE00FE88CB /* aeroplane_138.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_138.png; sourceTree = "<group>"; };
+		8286AB79205984AE00FE88CB /* aeroplane_38.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_38.png; sourceTree = "<group>"; };
+		8286AB7A205984AE00FE88CB /* aeroplane_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_10.png; sourceTree = "<group>"; };
+		8286AB7B205984AE00FE88CB /* aeroplane_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_11.png; sourceTree = "<group>"; };
+		8286AB7C205984AE00FE88CB /* aeroplane_39.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_39.png; sourceTree = "<group>"; };
+		8286AB7D205984AE00FE88CB /* aeroplane_139.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_139.png; sourceTree = "<group>"; };
+		8286AB7E205984AE00FE88CB /* aeroplane_111.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_111.png; sourceTree = "<group>"; };
+		8286AB7F205984AE00FE88CB /* aeroplane_105.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_105.png; sourceTree = "<group>"; };
+		8286AB80205984AE00FE88CB /* aeroplane_113.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_113.png; sourceTree = "<group>"; };
+		8286AB81205984AE00FE88CB /* aeroplane_107.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_107.png; sourceTree = "<group>"; };
+		8286AB82205984AE00FE88CB /* aeroplane_13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_13.png; sourceTree = "<group>"; };
+		8286AB83205984AE00FE88CB /* aeroplane_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_12.png; sourceTree = "<group>"; };
+		8286AB84205984AE00FE88CB /* aeroplane_106.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_106.png; sourceTree = "<group>"; };
+		8286AB85205984AE00FE88CB /* aeroplane_112.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_112.png; sourceTree = "<group>"; };
+		8286AB86205984AE00FE88CB /* aeroplane_116.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_116.png; sourceTree = "<group>"; };
+		8286AB87205984AE00FE88CB /* aeroplane_102.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_102.png; sourceTree = "<group>"; };
+		8286AB88205984AE00FE88CB /* aeroplane_16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_16.png; sourceTree = "<group>"; };
+		8286AB89205984AE00FE88CB /* aeroplane_17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_17.png; sourceTree = "<group>"; };
+		8286AB8A205984AE00FE88CB /* aeroplane_103.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_103.png; sourceTree = "<group>"; };
+		8286AB8B205984AE00FE88CB /* aeroplane_117.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_117.png; sourceTree = "<group>"; };
+		8286AB8C205984AE00FE88CB /* aeroplane_129.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_129.png; sourceTree = "<group>"; };
+		8286AB8D205984AE00FE88CB /* aeroplane_101.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_101.png; sourceTree = "<group>"; };
+		8286AB8E205984AE00FE88CB /* aeroplane_115.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_115.png; sourceTree = "<group>"; };
+		8286AB8F205984AE00FE88CB /* aeroplane_15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_15.png; sourceTree = "<group>"; };
+		8286AB90205984AE00FE88CB /* aeroplane_29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_29.png; sourceTree = "<group>"; };
+		8286AB91205984AE00FE88CB /* aeroplane_28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_28.png; sourceTree = "<group>"; };
+		8286AB92205984AE00FE88CB /* aeroplane_14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_14.png; sourceTree = "<group>"; };
+		8286AB93205984AE00FE88CB /* aeroplane_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_114.png; sourceTree = "<group>"; };
+		8286AB94205984AE00FE88CB /* aeroplane_100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_100.png; sourceTree = "<group>"; };
+		8286AB95205984AE00FE88CB /* aeroplane_128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_128.png; sourceTree = "<group>"; };
+		8286AB96205984AE00FE88CB /* aeroplane_167.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_167.png; sourceTree = "<group>"; };
+		8286AB97205984AE00FE88CB /* aeroplane_98.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_98.png; sourceTree = "<group>"; };
+		8286AB98205984AE00FE88CB /* aeroplane_73.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_73.png; sourceTree = "<group>"; };
+		8286AB99205984AE00FE88CB /* aeroplane_67.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_67.png; sourceTree = "<group>"; };
+		8286AB9A205984AE00FE88CB /* aeroplane_66.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_66.png; sourceTree = "<group>"; };
+		8286AB9B205984AE00FE88CB /* aeroplane_72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_72.png; sourceTree = "<group>"; };
+		8286AB9C205984AE00FE88CB /* aeroplane_99.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_99.png; sourceTree = "<group>"; };
+		8286AB9D205984AE00FE88CB /* aeroplane_166.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_166.png; sourceTree = "<group>"; };
+		8286AB9E205984AE00FE88CB /* aeroplane_164.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_164.png; sourceTree = "<group>"; };
+		8286AB9F205984AE00FE88CB /* aeroplane_158.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_158.png; sourceTree = "<group>"; };
+		8286ABA0205984AE00FE88CB /* aeroplane_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_8.png; sourceTree = "<group>"; };
+		8286ABA1205984AE00FE88CB /* aeroplane_58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_58.png; sourceTree = "<group>"; };
+		8286ABA2205984AE00FE88CB /* aeroplane_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_64.png; sourceTree = "<group>"; };
+		8286ABA3205984AE00FE88CB /* aeroplane_70.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_70.png; sourceTree = "<group>"; };
+		8286ABA4205984AE00FE88CB /* aeroplane_71.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_71.png; sourceTree = "<group>"; };
+		8286ABA5205984AE00FE88CB /* aeroplane_65.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_65.png; sourceTree = "<group>"; };
+		8286ABA6205984AE00FE88CB /* aeroplane_59.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_59.png; sourceTree = "<group>"; };
+		8286ABA7205984AE00FE88CB /* aeroplane_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_9.png; sourceTree = "<group>"; };
+		8286ABA8205984AE00FE88CB /* aeroplane_159.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_159.png; sourceTree = "<group>"; };
+		8286ABA9205984AE00FE88CB /* aeroplane_165.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_165.png; sourceTree = "<group>"; };
+		8286ABAA205984AE00FE88CB /* aeroplane_149.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_149.png; sourceTree = "<group>"; };
+		8286ABAB205984AE00FE88CB /* aeroplane_161.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_161.png; sourceTree = "<group>"; };
+		8286ABAC205984AE00FE88CB /* aeroplane_61.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_61.png; sourceTree = "<group>"; };
+		8286ABAD205984AE00FE88CB /* aeroplane_75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_75.png; sourceTree = "<group>"; };
+		8286ABAE205984AE00FE88CB /* aeroplane_49.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_49.png; sourceTree = "<group>"; };
+		8286ABAF205984AE00FE88CB /* aeroplane_48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_48.png; sourceTree = "<group>"; };
+		8286ABB0205984AE00FE88CB /* aeroplane_74.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_74.png; sourceTree = "<group>"; };
+		8286ABB1205984AE00FE88CB /* aeroplane_60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_60.png; sourceTree = "<group>"; };
+		8286ABB2205984AE00FE88CB /* aeroplane_160.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_160.png; sourceTree = "<group>"; };
+		8286ABB3205984AE00FE88CB /* aeroplane_148.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_148.png; sourceTree = "<group>"; };
+		8286ABB4205984AE00FE88CB /* aeroplane_162.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_162.png; sourceTree = "<group>"; };
+		8286ABB5205984AE00FE88CB /* aeroplane_89.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_89.png; sourceTree = "<group>"; };
+		8286ABB6205984AE00FE88CB /* aeroplane_76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_76.png; sourceTree = "<group>"; };
+		8286ABB7205984AE00FE88CB /* aeroplane_62.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_62.png; sourceTree = "<group>"; };
+		8286ABB8205984AE00FE88CB /* aeroplane_63.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_63.png; sourceTree = "<group>"; };
+		8286ABB9205984AE00FE88CB /* aeroplane_77.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_77.png; sourceTree = "<group>"; };
+		8286ABBA205984AE00FE88CB /* aeroplane_88.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_88.png; sourceTree = "<group>"; };
+		8286ABBB205984AE00FE88CB /* aeroplane_163.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_163.png; sourceTree = "<group>"; };
+		8286ABBC205984AE00FE88CB /* aeroplane_146.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_146.png; sourceTree = "<group>"; };
+		8286ABBD205984AE00FE88CB /* aeroplane_152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_152.png; sourceTree = "<group>"; };
+		8286ABBE205984AE00FE88CB /* aeroplane_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_2.png; sourceTree = "<group>"; };
+		8286ABBF205984AE00FE88CB /* aeroplane_91.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_91.png; sourceTree = "<group>"; };
+		8286ABC0205984AE00FE88CB /* aeroplane_85.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_85.png; sourceTree = "<group>"; };
+		8286ABC1205984AE00FE88CB /* aeroplane_52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_52.png; sourceTree = "<group>"; };
+		8286ABC2205984AE00FE88CB /* aeroplane_46.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_46.png; sourceTree = "<group>"; };
+		8286ABC3205984AE00FE88CB /* aeroplane_47.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_47.png; sourceTree = "<group>"; };
+		8286ABC4205984AE00FE88CB /* aeroplane_53.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_53.png; sourceTree = "<group>"; };
+		8286ABC5205984AE00FE88CB /* aeroplane_84.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_84.png; sourceTree = "<group>"; };
+		8286ABC6205984AE00FE88CB /* aeroplane_90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_90.png; sourceTree = "<group>"; };
+		8286ABC7205984AE00FE88CB /* aeroplane_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_3.png; sourceTree = "<group>"; };
+		8286ABC8205984AE00FE88CB /* aeroplane_153.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_153.png; sourceTree = "<group>"; };
+		8286ABC9205984AE00FE88CB /* aeroplane_147.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_147.png; sourceTree = "<group>"; };
+		8286ABCA205984AE00FE88CB /* aeroplane_151.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_151.png; sourceTree = "<group>"; };
+		8286ABCB205984AE00FE88CB /* aeroplane_145.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_145.png; sourceTree = "<group>"; };
+		8286ABCC205984AE00FE88CB /* aeroplane_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_1.png; sourceTree = "<group>"; };
+		8286ABCD205984AE00FE88CB /* aeroplane_86.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_86.png; sourceTree = "<group>"; };
+		8286ABCE205984AE00FE88CB /* aeroplane_92.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_92.png; sourceTree = "<group>"; };
+		8286ABCF205984AE00FE88CB /* aeroplane_79.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_79.png; sourceTree = "<group>"; };
+		8286ABD0205984AE00FE88CB /* aeroplane_45.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_45.png; sourceTree = "<group>"; };
+		8286ABD1205984AE00FE88CB /* aeroplane_51.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_51.png; sourceTree = "<group>"; };
+		8286ABD2205984AE00FE88CB /* aeroplane_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_50.png; sourceTree = "<group>"; };
+		8286ABD3205984AE00FE88CB /* aeroplane_44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_44.png; sourceTree = "<group>"; };
+		8286ABD4205984AE00FE88CB /* aeroplane_78.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_78.png; sourceTree = "<group>"; };
+		8286ABD5205984AE00FE88CB /* aeroplane_93.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_93.png; sourceTree = "<group>"; };
+		8286ABD6205984AE00FE88CB /* aeroplane_87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_87.png; sourceTree = "<group>"; };
+		8286ABD7205984AE00FE88CB /* aeroplane_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_0.png; sourceTree = "<group>"; };
+		8286ABD8205984AE00FE88CB /* aeroplane_144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_144.png; sourceTree = "<group>"; };
+		8286ABD9205984AE00FE88CB /* aeroplane_150.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_150.png; sourceTree = "<group>"; };
+		8286ABDA205984AE00FE88CB /* aeroplane_154.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_154.png; sourceTree = "<group>"; };
+		8286ABDB205984AE00FE88CB /* aeroplane_140.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_140.png; sourceTree = "<group>"; };
+		8286ABDC205984AE00FE88CB /* aeroplane_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_4.png; sourceTree = "<group>"; };
+		8286ABDD205984AE00FE88CB /* aeroplane_83.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_83.png; sourceTree = "<group>"; };
+		8286ABDE205984AE00FE88CB /* aeroplane_97.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_97.png; sourceTree = "<group>"; };
+		8286ABDF205984AE00FE88CB /* aeroplane_40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_40.png; sourceTree = "<group>"; };
+		8286ABE0205984AE00FE88CB /* aeroplane_54.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_54.png; sourceTree = "<group>"; };
+		8286ABE1205984AE00FE88CB /* aeroplane_68.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_68.png; sourceTree = "<group>"; };
+		8286ABE2205984AE00FE88CB /* aeroplane_69.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_69.png; sourceTree = "<group>"; };
+		8286ABE3205984AE00FE88CB /* aeroplane_55.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_55.png; sourceTree = "<group>"; };
+		8286ABE4205984AE00FE88CB /* aeroplane_41.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_41.png; sourceTree = "<group>"; };
+		8286ABE5205984AE00FE88CB /* aeroplane_96.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_96.png; sourceTree = "<group>"; };
+		8286ABE6205984AE00FE88CB /* aeroplane_82.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_82.png; sourceTree = "<group>"; };
+		8286ABE7205984AE00FE88CB /* aeroplane_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_5.png; sourceTree = "<group>"; };
+		8286ABE8205984AE00FE88CB /* aeroplane_141.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_141.png; sourceTree = "<group>"; };
+		8286ABE9205984AE00FE88CB /* aeroplane_155.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_155.png; sourceTree = "<group>"; };
+		8286ABEA205984AE00FE88CB /* aeroplane_143.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_143.png; sourceTree = "<group>"; };
+		8286ABEB205984AE00FE88CB /* aeroplane_157.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_157.png; sourceTree = "<group>"; };
+		8286ABEC205984AE00FE88CB /* aeroplane_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_7.png; sourceTree = "<group>"; };
+		8286ABED205984AE00FE88CB /* aeroplane_94.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_94.png; sourceTree = "<group>"; };
+		8286ABEE205984AE00FE88CB /* aeroplane_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_80.png; sourceTree = "<group>"; };
+		8286ABEF205984AE00FE88CB /* aeroplane_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_57.png; sourceTree = "<group>"; };
+		8286ABF0205984AE00FE88CB /* aeroplane_43.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_43.png; sourceTree = "<group>"; };
+		8286ABF1205984AE00FE88CB /* aeroplane_42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_42.png; sourceTree = "<group>"; };
+		8286ABF2205984AE00FE88CB /* aeroplane_56.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_56.png; sourceTree = "<group>"; };
+		8286ABF3205984AE00FE88CB /* aeroplane_81.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_81.png; sourceTree = "<group>"; };
+		8286ABF4205984AE00FE88CB /* aeroplane_95.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_95.png; sourceTree = "<group>"; };
+		8286ABF5205984AE00FE88CB /* aeroplane_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_6.png; sourceTree = "<group>"; };
+		8286ABF6205984AE00FE88CB /* aeroplane_156.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_156.png; sourceTree = "<group>"; };
+		8286ABF7205984AE00FE88CB /* aeroplane_142.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_142.png; sourceTree = "<group>"; };
+		8286ABF8205984AE00FE88CB /* aeroplane_125.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_125.png; sourceTree = "<group>"; };
+		8286ABF9205984AE00FE88CB /* aeroplane_131.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_131.png; sourceTree = "<group>"; };
+		8286ABFA205984AE00FE88CB /* aeroplane_119.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_119.png; sourceTree = "<group>"; };
+		8286ABFB205984AE00FE88CB /* aeroplane_19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_19.png; sourceTree = "<group>"; };
+		8286ABFC205984AE00FE88CB /* aeroplane_31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_31.png; sourceTree = "<group>"; };
+		8286ABFD205984AE00FE88CB /* aeroplane_25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_25.png; sourceTree = "<group>"; };
+		8286ABFE205984AE00FE88CB /* aeroplane_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_24.png; sourceTree = "<group>"; };
+		8286ABFF205984AE00FE88CB /* aeroplane_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_30.png; sourceTree = "<group>"; };
+		8286AC00205984AE00FE88CB /* aeroplane_18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_18.png; sourceTree = "<group>"; };
+		8286AC01205984AE00FE88CB /* aeroplane_118.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_118.png; sourceTree = "<group>"; };
+		8286AC02205984AE00FE88CB /* aeroplane_130.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_130.png; sourceTree = "<group>"; };
+		8286AC03205984AE00FE88CB /* aeroplane_124.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_124.png; sourceTree = "<group>"; };
+		8286AC04205984AE00FE88CB /* aeroplane_132.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_132.png; sourceTree = "<group>"; };
+		8286AC05205984AF00FE88CB /* aeroplane_126.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_126.png; sourceTree = "<group>"; };
+		8286AC06205984AF00FE88CB /* aeroplane_26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_26.png; sourceTree = "<group>"; };
+		8286AC07205984AF00FE88CB /* aeroplane_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_32.png; sourceTree = "<group>"; };
+		8286AC08205984AF00FE88CB /* aeroplane_33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_33.png; sourceTree = "<group>"; };
+		8286AC09205984AF00FE88CB /* aeroplane_27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_27.png; sourceTree = "<group>"; };
+		8286AC0A205984AF00FE88CB /* aeroplane_127.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_127.png; sourceTree = "<group>"; };
+		8286AC0B205984AF00FE88CB /* aeroplane_133.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_133.png; sourceTree = "<group>"; };
+		8286AC0C205984AF00FE88CB /* aeroplane_137.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_137.png; sourceTree = "<group>"; };
+		8286AC0D205984AF00FE88CB /* aeroplane_123.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_123.png; sourceTree = "<group>"; };
+		8286AC0E205984AF00FE88CB /* aeroplane_23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_23.png; sourceTree = "<group>"; };
+		8286AC0F205984AF00FE88CB /* aeroplane_37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_37.png; sourceTree = "<group>"; };
+		8286AC10205984AF00FE88CB /* aeroplane_36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_36.png; sourceTree = "<group>"; };
+		8286AC11205984AF00FE88CB /* aeroplane_22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_22.png; sourceTree = "<group>"; };
+		8286AC12205984AF00FE88CB /* aeroplane_122.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_122.png; sourceTree = "<group>"; };
+		8286AC13205984AF00FE88CB /* aeroplane_136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_136.png; sourceTree = "<group>"; };
+		8286AC14205984AF00FE88CB /* aeroplane_108.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_108.png; sourceTree = "<group>"; };
+		8286AC15205984AF00FE88CB /* aeroplane_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_120.png; sourceTree = "<group>"; };
+		8286AC16205984AF00FE88CB /* aeroplane_134.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_134.png; sourceTree = "<group>"; };
+		8286AC17205984AF00FE88CB /* aeroplane_34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_34.png; sourceTree = "<group>"; };
+		8286AC18205984AF00FE88CB /* aeroplane_20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_20.png; sourceTree = "<group>"; };
+		8286AC19205984AF00FE88CB /* aeroplane_21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_21.png; sourceTree = "<group>"; };
+		8286AC1A205984AF00FE88CB /* aeroplane_35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_35.png; sourceTree = "<group>"; };
+		8286AC1B205984AF00FE88CB /* aeroplane_135.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_135.png; sourceTree = "<group>"; };
+		8286AC1C205984AF00FE88CB /* aeroplane_121.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_121.png; sourceTree = "<group>"; };
+		8286AC1D205984AF00FE88CB /* aeroplane_109.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane_109.png; sourceTree = "<group>"; };
+		82CD72A8204D732D00E2D93B /* NoFileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoFileViewController.swift; sourceTree = "<group>"; };
+		82CD72AB204D75B100E2D93B /* SetFileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetFileViewController.swift; sourceTree = "<group>"; };
+		82CD72AD204D848A00E2D93B /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		82CD72B1204D936B00E2D93B /* Calls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calls.swift; sourceTree = "<group>"; };
+		82CD72BA204D9CF300E2D93B /* MarvelProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelProject.swift; sourceTree = "<group>"; };
+		82CD72C4204DC50E00E2D93B /* NSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSButton.swift; sourceTree = "<group>"; };
+		82D77956205BE50500408A37 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		82D77958205BE9AE00408A37 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		82D77966205C0E0000408A37 /* SyncingOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncingOperations.swift; sourceTree = "<group>"; };
+		82D77969205C0E8700408A37 /* SyncingOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncingOperation.swift; sourceTree = "<group>"; };
+		82D7796B205C13B300408A37 /* AsynchronousOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsynchronousOperation.swift; sourceTree = "<group>"; };
+		AD04E9091E8B327025B20CA6 /* Pods-MarvelForKeynoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelForKeynoteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarvelForKeynoteTests/Pods-MarvelForKeynoteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BF7F7D0CA0CE22EDEB87627D /* Pods_MarvelForKeynote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarvelForKeynote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9E5BE3333A8718AB710530E /* Pods-MarvelForKeynote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelForKeynote.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarvelForKeynote/Pods-MarvelForKeynote.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8259CBD220333DA500316ECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8259CC37203391CD00316ECB /* ScriptingUtilities.framework in Frameworks */,
+				2AA6561AEF3B66823B77AE22 /* Pods_MarvelForKeynote.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8259CBE420333DA500316ECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD8A4F3381550F3BC667FF65 /* Pods_MarvelForKeynoteTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8259CBEF20333DA500316ECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D6A7155BBBFFAA3C995D086 /* Pods_MarvelForKeynoteUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		767819D434E12598AFE7CF47 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34BBE71CD40B8DE45B609C61 /* Pods-MarvelForKeynote.debug.xcconfig */,
+				D9E5BE3333A8718AB710530E /* Pods-MarvelForKeynote.release.xcconfig */,
+				AD04E9091E8B327025B20CA6 /* Pods-MarvelForKeynoteTests.debug.xcconfig */,
+				0E110D18BEBD338A30FF9CB1 /* Pods-MarvelForKeynoteTests.release.xcconfig */,
+				528D83B86B0670B679DEE840 /* Pods-MarvelForKeynoteUITests.debug.xcconfig */,
+				0462AF2E09E1AD01442F047F /* Pods-MarvelForKeynoteUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8203089320778ECE008942C1 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				8281A8CC206AF5BF00BE32BA /* AuthenticationManager.swift */,
+				8203085320768716008942C1 /* Token+Helpers.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		8203089420778EF0008942C1 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				8286AB75205984AE00FE88CB /* Animation */,
+				8259CBDC20333DA500316ECB /* Assets.xcassets */,
+				8259CBDE20333DA500316ECB /* Main.storyboard */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		8259CBCC20333DA400316ECB = {
+			isa = PBXGroup;
+			children = (
+				8259CBD720333DA500316ECB /* MarvelForKeynote */,
+				8259CBEA20333DA500316ECB /* MarvelForKeynoteTests */,
+				8259CBF520333DA500316ECB /* MarvelForKeynoteUITests */,
+				8259CC2F203391A600316ECB /* Frameworks */,
+				8259CBD620333DA500316ECB /* Products */,
+				767819D434E12598AFE7CF47 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		8259CBD620333DA500316ECB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8259CBD520333DA500316ECB /* Marvel for Keynote.app */,
+				8259CBE720333DA500316ECB /* MarvelForKeynoteTests.xctest */,
+				8259CBF220333DA500316ECB /* MarvelForKeynoteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8259CBD720333DA500316ECB /* MarvelForKeynote */ = {
+			isa = PBXGroup;
+			children = (
+				82203A82207B80D400BB80AC /* MarvelForKeynote.entitlements */,
+				8259CBD820333DA500316ECB /* AppDelegate.swift */,
+				8286AA1A20597F1600FE88CB /* Controllers */,
+				82CD72B9204D9CDF00E2D93B /* Marvel */,
+				8259CC582035B90500316ECB /* Components */,
+				8259CC41203490A900316ECB /* Extensions */,
+				8259CC1320338A3800316ECB /* Keynote */,
+				8203089420778EF0008942C1 /* Design */,
+				8281A8D1206BD1BF00BE32BA /* Config */,
+				8281A8E0206BF09700BE32BA /* Model.xcdatamodeld */,
+				8259CBE120333DA500316ECB /* Info.plist */,
+			);
+			path = MarvelForKeynote;
+			sourceTree = "<group>";
+		};
+		8259CBEA20333DA500316ECB /* MarvelForKeynoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				8259CBEB20333DA500316ECB /* MarvelForKeynoteTests.swift */,
+				8259CBED20333DA500316ECB /* Info.plist */,
+			);
+			path = MarvelForKeynoteTests;
+			sourceTree = "<group>";
+		};
+		8259CBF520333DA500316ECB /* MarvelForKeynoteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8259CBF620333DA500316ECB /* MarvelForKeynoteUITests.swift */,
+				8259CBF820333DA500316ECB /* Info.plist */,
+			);
+			path = MarvelForKeynoteUITests;
+			sourceTree = "<group>";
+		};
+		8259CC1320338A3800316ECB /* Keynote */ = {
+			isa = PBXGroup;
+			children = (
+				8259CC0420333DE900316ECB /* KeynoteExporter.swift */,
+				8259CC1820338AEF00316ECB /* Keynote.swift */,
+				8259CC1920338AEF00316ECB /* KeynoteScripting.swift */,
+			);
+			path = Keynote;
+			sourceTree = "<group>";
+		};
+		8259CC2F203391A600316ECB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8259CC30203391BE00316ECB /* ScriptingUtilities.xcodeproj */,
+				BF7F7D0CA0CE22EDEB87627D /* Pods_MarvelForKeynote.framework */,
+				69D79EF3ACEBA8F49281AB86 /* Pods_MarvelForKeynoteTests.framework */,
+				117C3EB158F92F4DDE37BE5D /* Pods_MarvelForKeynoteUITests.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		8259CC31203391BE00316ECB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8259CC35203391BE00316ECB /* ScriptingUtilities.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8259CC41203490A900316ECB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8281A8DE206BEAAB00BE32BA /* Alert.swift */,
+				8259CC42203490A900316ECB /* HexColors.swift */,
+				82D77956205BE50500408A37 /* Data.swift */,
+				82D7796B205C13B300408A37 /* AsynchronousOperation.swift */,
+				82CD72C4204DC50E00E2D93B /* NSButton.swift */,
+				820308972077CB0F008942C1 /* Array.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8259CC582035B90500316ECB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				82CD72AD204D848A00E2D93B /* Button.swift */,
+				8259CC4E2034B2AB00316ECB /* NavBarView.swift */,
+				8259CC502035B4E700316ECB /* TitleTextField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		8281A8D1206BD1BF00BE32BA /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				8281A8D6206BD82500BE32BA /* Secrets.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		8286AA1A20597F1600FE88CB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8259CC612035E3AC00316ECB /* MainWindowController.swift */,
+				8259CC4C20349A6400316ECB /* ConnectViewController.swift */,
+				82CD72AA204D733500E2D93B /* Drag and Drop */,
+				82D77968205C0E0600408A37 /* Syncing */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8286AB75205984AE00FE88CB /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				8286AB76205984AE00FE88CB /* aeroplane_104.png */,
+				8286AB77205984AE00FE88CB /* aeroplane_110.png */,
+				8286AB78205984AE00FE88CB /* aeroplane_138.png */,
+				8286AB79205984AE00FE88CB /* aeroplane_38.png */,
+				8286AB7A205984AE00FE88CB /* aeroplane_10.png */,
+				8286AB7B205984AE00FE88CB /* aeroplane_11.png */,
+				8286AB7C205984AE00FE88CB /* aeroplane_39.png */,
+				8286AB7D205984AE00FE88CB /* aeroplane_139.png */,
+				8286AB7E205984AE00FE88CB /* aeroplane_111.png */,
+				8286AB7F205984AE00FE88CB /* aeroplane_105.png */,
+				8286AB80205984AE00FE88CB /* aeroplane_113.png */,
+				8286AB81205984AE00FE88CB /* aeroplane_107.png */,
+				8286AB82205984AE00FE88CB /* aeroplane_13.png */,
+				8286AB83205984AE00FE88CB /* aeroplane_12.png */,
+				8286AB84205984AE00FE88CB /* aeroplane_106.png */,
+				8286AB85205984AE00FE88CB /* aeroplane_112.png */,
+				8286AB86205984AE00FE88CB /* aeroplane_116.png */,
+				8286AB87205984AE00FE88CB /* aeroplane_102.png */,
+				8286AB88205984AE00FE88CB /* aeroplane_16.png */,
+				8286AB89205984AE00FE88CB /* aeroplane_17.png */,
+				8286AB8A205984AE00FE88CB /* aeroplane_103.png */,
+				8286AB8B205984AE00FE88CB /* aeroplane_117.png */,
+				8286AB8C205984AE00FE88CB /* aeroplane_129.png */,
+				8286AB8D205984AE00FE88CB /* aeroplane_101.png */,
+				8286AB8E205984AE00FE88CB /* aeroplane_115.png */,
+				8286AB8F205984AE00FE88CB /* aeroplane_15.png */,
+				8286AB90205984AE00FE88CB /* aeroplane_29.png */,
+				8286AB91205984AE00FE88CB /* aeroplane_28.png */,
+				8286AB92205984AE00FE88CB /* aeroplane_14.png */,
+				8286AB93205984AE00FE88CB /* aeroplane_114.png */,
+				8286AB94205984AE00FE88CB /* aeroplane_100.png */,
+				8286AB95205984AE00FE88CB /* aeroplane_128.png */,
+				8286AB96205984AE00FE88CB /* aeroplane_167.png */,
+				8286AB97205984AE00FE88CB /* aeroplane_98.png */,
+				8286AB98205984AE00FE88CB /* aeroplane_73.png */,
+				8286AB99205984AE00FE88CB /* aeroplane_67.png */,
+				8286AB9A205984AE00FE88CB /* aeroplane_66.png */,
+				8286AB9B205984AE00FE88CB /* aeroplane_72.png */,
+				8286AB9C205984AE00FE88CB /* aeroplane_99.png */,
+				8286AB9D205984AE00FE88CB /* aeroplane_166.png */,
+				8286AB9E205984AE00FE88CB /* aeroplane_164.png */,
+				8286AB9F205984AE00FE88CB /* aeroplane_158.png */,
+				8286ABA0205984AE00FE88CB /* aeroplane_8.png */,
+				8286ABA1205984AE00FE88CB /* aeroplane_58.png */,
+				8286ABA2205984AE00FE88CB /* aeroplane_64.png */,
+				8286ABA3205984AE00FE88CB /* aeroplane_70.png */,
+				8286ABA4205984AE00FE88CB /* aeroplane_71.png */,
+				8286ABA5205984AE00FE88CB /* aeroplane_65.png */,
+				8286ABA6205984AE00FE88CB /* aeroplane_59.png */,
+				8286ABA7205984AE00FE88CB /* aeroplane_9.png */,
+				8286ABA8205984AE00FE88CB /* aeroplane_159.png */,
+				8286ABA9205984AE00FE88CB /* aeroplane_165.png */,
+				8286ABAA205984AE00FE88CB /* aeroplane_149.png */,
+				8286ABAB205984AE00FE88CB /* aeroplane_161.png */,
+				8286ABAC205984AE00FE88CB /* aeroplane_61.png */,
+				8286ABAD205984AE00FE88CB /* aeroplane_75.png */,
+				8286ABAE205984AE00FE88CB /* aeroplane_49.png */,
+				8286ABAF205984AE00FE88CB /* aeroplane_48.png */,
+				8286ABB0205984AE00FE88CB /* aeroplane_74.png */,
+				8286ABB1205984AE00FE88CB /* aeroplane_60.png */,
+				8286ABB2205984AE00FE88CB /* aeroplane_160.png */,
+				8286ABB3205984AE00FE88CB /* aeroplane_148.png */,
+				8286ABB4205984AE00FE88CB /* aeroplane_162.png */,
+				8286ABB5205984AE00FE88CB /* aeroplane_89.png */,
+				8286ABB6205984AE00FE88CB /* aeroplane_76.png */,
+				8286ABB7205984AE00FE88CB /* aeroplane_62.png */,
+				8286ABB8205984AE00FE88CB /* aeroplane_63.png */,
+				8286ABB9205984AE00FE88CB /* aeroplane_77.png */,
+				8286ABBA205984AE00FE88CB /* aeroplane_88.png */,
+				8286ABBB205984AE00FE88CB /* aeroplane_163.png */,
+				8286ABBC205984AE00FE88CB /* aeroplane_146.png */,
+				8286ABBD205984AE00FE88CB /* aeroplane_152.png */,
+				8286ABBE205984AE00FE88CB /* aeroplane_2.png */,
+				8286ABBF205984AE00FE88CB /* aeroplane_91.png */,
+				8286ABC0205984AE00FE88CB /* aeroplane_85.png */,
+				8286ABC1205984AE00FE88CB /* aeroplane_52.png */,
+				8286ABC2205984AE00FE88CB /* aeroplane_46.png */,
+				8286ABC3205984AE00FE88CB /* aeroplane_47.png */,
+				8286ABC4205984AE00FE88CB /* aeroplane_53.png */,
+				8286ABC5205984AE00FE88CB /* aeroplane_84.png */,
+				8286ABC6205984AE00FE88CB /* aeroplane_90.png */,
+				8286ABC7205984AE00FE88CB /* aeroplane_3.png */,
+				8286ABC8205984AE00FE88CB /* aeroplane_153.png */,
+				8286ABC9205984AE00FE88CB /* aeroplane_147.png */,
+				8286ABCA205984AE00FE88CB /* aeroplane_151.png */,
+				8286ABCB205984AE00FE88CB /* aeroplane_145.png */,
+				8286ABCC205984AE00FE88CB /* aeroplane_1.png */,
+				8286ABCD205984AE00FE88CB /* aeroplane_86.png */,
+				8286ABCE205984AE00FE88CB /* aeroplane_92.png */,
+				8286ABCF205984AE00FE88CB /* aeroplane_79.png */,
+				8286ABD0205984AE00FE88CB /* aeroplane_45.png */,
+				8286ABD1205984AE00FE88CB /* aeroplane_51.png */,
+				8286ABD2205984AE00FE88CB /* aeroplane_50.png */,
+				8286ABD3205984AE00FE88CB /* aeroplane_44.png */,
+				8286ABD4205984AE00FE88CB /* aeroplane_78.png */,
+				8286ABD5205984AE00FE88CB /* aeroplane_93.png */,
+				8286ABD6205984AE00FE88CB /* aeroplane_87.png */,
+				8286ABD7205984AE00FE88CB /* aeroplane_0.png */,
+				8286ABD8205984AE00FE88CB /* aeroplane_144.png */,
+				8286ABD9205984AE00FE88CB /* aeroplane_150.png */,
+				8286ABDA205984AE00FE88CB /* aeroplane_154.png */,
+				8286ABDB205984AE00FE88CB /* aeroplane_140.png */,
+				8286ABDC205984AE00FE88CB /* aeroplane_4.png */,
+				8286ABDD205984AE00FE88CB /* aeroplane_83.png */,
+				8286ABDE205984AE00FE88CB /* aeroplane_97.png */,
+				8286ABDF205984AE00FE88CB /* aeroplane_40.png */,
+				8286ABE0205984AE00FE88CB /* aeroplane_54.png */,
+				8286ABE1205984AE00FE88CB /* aeroplane_68.png */,
+				8286ABE2205984AE00FE88CB /* aeroplane_69.png */,
+				8286ABE3205984AE00FE88CB /* aeroplane_55.png */,
+				8286ABE4205984AE00FE88CB /* aeroplane_41.png */,
+				8286ABE5205984AE00FE88CB /* aeroplane_96.png */,
+				8286ABE6205984AE00FE88CB /* aeroplane_82.png */,
+				8286ABE7205984AE00FE88CB /* aeroplane_5.png */,
+				8286ABE8205984AE00FE88CB /* aeroplane_141.png */,
+				8286ABE9205984AE00FE88CB /* aeroplane_155.png */,
+				8286ABEA205984AE00FE88CB /* aeroplane_143.png */,
+				8286ABEB205984AE00FE88CB /* aeroplane_157.png */,
+				8286ABEC205984AE00FE88CB /* aeroplane_7.png */,
+				8286ABED205984AE00FE88CB /* aeroplane_94.png */,
+				8286ABEE205984AE00FE88CB /* aeroplane_80.png */,
+				8286ABEF205984AE00FE88CB /* aeroplane_57.png */,
+				8286ABF0205984AE00FE88CB /* aeroplane_43.png */,
+				8286ABF1205984AE00FE88CB /* aeroplane_42.png */,
+				8286ABF2205984AE00FE88CB /* aeroplane_56.png */,
+				8286ABF3205984AE00FE88CB /* aeroplane_81.png */,
+				8286ABF4205984AE00FE88CB /* aeroplane_95.png */,
+				8286ABF5205984AE00FE88CB /* aeroplane_6.png */,
+				8286ABF6205984AE00FE88CB /* aeroplane_156.png */,
+				8286ABF7205984AE00FE88CB /* aeroplane_142.png */,
+				8286ABF8205984AE00FE88CB /* aeroplane_125.png */,
+				8286ABF9205984AE00FE88CB /* aeroplane_131.png */,
+				8286ABFA205984AE00FE88CB /* aeroplane_119.png */,
+				8286ABFB205984AE00FE88CB /* aeroplane_19.png */,
+				8286ABFC205984AE00FE88CB /* aeroplane_31.png */,
+				8286ABFD205984AE00FE88CB /* aeroplane_25.png */,
+				8286ABFE205984AE00FE88CB /* aeroplane_24.png */,
+				8286ABFF205984AE00FE88CB /* aeroplane_30.png */,
+				8286AC00205984AE00FE88CB /* aeroplane_18.png */,
+				8286AC01205984AE00FE88CB /* aeroplane_118.png */,
+				8286AC02205984AE00FE88CB /* aeroplane_130.png */,
+				8286AC03205984AE00FE88CB /* aeroplane_124.png */,
+				8286AC04205984AE00FE88CB /* aeroplane_132.png */,
+				8286AC05205984AF00FE88CB /* aeroplane_126.png */,
+				8286AC06205984AF00FE88CB /* aeroplane_26.png */,
+				8286AC07205984AF00FE88CB /* aeroplane_32.png */,
+				8286AC08205984AF00FE88CB /* aeroplane_33.png */,
+				8286AC09205984AF00FE88CB /* aeroplane_27.png */,
+				8286AC0A205984AF00FE88CB /* aeroplane_127.png */,
+				8286AC0B205984AF00FE88CB /* aeroplane_133.png */,
+				8286AC0C205984AF00FE88CB /* aeroplane_137.png */,
+				8286AC0D205984AF00FE88CB /* aeroplane_123.png */,
+				8286AC0E205984AF00FE88CB /* aeroplane_23.png */,
+				8286AC0F205984AF00FE88CB /* aeroplane_37.png */,
+				8286AC10205984AF00FE88CB /* aeroplane_36.png */,
+				8286AC11205984AF00FE88CB /* aeroplane_22.png */,
+				8286AC12205984AF00FE88CB /* aeroplane_122.png */,
+				8286AC13205984AF00FE88CB /* aeroplane_136.png */,
+				8286AC14205984AF00FE88CB /* aeroplane_108.png */,
+				8286AC15205984AF00FE88CB /* aeroplane_120.png */,
+				8286AC16205984AF00FE88CB /* aeroplane_134.png */,
+				8286AC17205984AF00FE88CB /* aeroplane_34.png */,
+				8286AC18205984AF00FE88CB /* aeroplane_20.png */,
+				8286AC19205984AF00FE88CB /* aeroplane_21.png */,
+				8286AC1A205984AF00FE88CB /* aeroplane_35.png */,
+				8286AC1B205984AF00FE88CB /* aeroplane_135.png */,
+				8286AC1C205984AF00FE88CB /* aeroplane_121.png */,
+				8286AC1D205984AF00FE88CB /* aeroplane_109.png */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		82CD72AA204D733500E2D93B /* Drag and Drop */ = {
+			isa = PBXGroup;
+			children = (
+				8259CBDA20333DA500316ECB /* SendViewController.swift */,
+				82CD72A8204D732D00E2D93B /* NoFileViewController.swift */,
+				82CD72AB204D75B100E2D93B /* SetFileViewController.swift */,
+				8259CC3C203397C600316ECB /* DragView.swift */,
+			);
+			path = "Drag and Drop";
+			sourceTree = "<group>";
+		};
+		82CD72B9204D9CDF00E2D93B /* Marvel */ = {
+			isa = PBXGroup;
+			children = (
+				8203089320778ECE008942C1 /* Authentication */,
+				82CD72B1204D936B00E2D93B /* Calls.swift */,
+				82D77958205BE9AE00408A37 /* Request.swift */,
+				82CD72BA204D9CF300E2D93B /* MarvelProject.swift */,
+				82032C3F205AC95E00627F75 /* MarvelScreen.swift */,
+				82032C41205ACAE700627F75 /* MarvelContent.swift */,
+			);
+			path = Marvel;
+			sourceTree = "<group>";
+		};
+		82D77968205C0E0600408A37 /* Syncing */ = {
+			isa = PBXGroup;
+			children = (
+				8286A8C720597C2100FE88CB /* SyncingViewController.swift */,
+				82D77966205C0E0000408A37 /* SyncingOperations.swift */,
+				82D77969205C0E8700408A37 /* SyncingOperation.swift */,
+			);
+			path = Syncing;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8259CBD420333DA500316ECB /* MarvelForKeynote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8259CBFB20333DA500316ECB /* Build configuration list for PBXNativeTarget "MarvelForKeynote" */;
+			buildPhases = (
+				C23AD1E9BEB51686AF52DAF8 /* [CP] Check Pods Manifest.lock */,
+				8259CBD120333DA500316ECB /* Sources */,
+				8259CBD220333DA500316ECB /* Frameworks */,
+				8259CBD320333DA500316ECB /* Resources */,
+				8259CC3B203391CD00316ECB /* Embed Frameworks */,
+				AB87228371C3BFAD1CCA5A58 /* [CP] Embed Pods Frameworks */,
+				DE9C5854548F55534536812D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8259CC3A203391CD00316ECB /* PBXTargetDependency */,
+			);
+			name = MarvelForKeynote;
+			productName = KeynoteToMarvel;
+			productReference = 8259CBD520333DA500316ECB /* Marvel for Keynote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8259CBE620333DA500316ECB /* MarvelForKeynoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8259CBFE20333DA500316ECB /* Build configuration list for PBXNativeTarget "MarvelForKeynoteTests" */;
+			buildPhases = (
+				027F6A5D721DCF7CD5036249 /* [CP] Check Pods Manifest.lock */,
+				8259CBE320333DA500316ECB /* Sources */,
+				8259CBE420333DA500316ECB /* Frameworks */,
+				8259CBE520333DA500316ECB /* Resources */,
+				581AFDA394576C43B38435CD /* [CP] Embed Pods Frameworks */,
+				CB98DCD4BAC91C74F60611E4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8259CBE920333DA500316ECB /* PBXTargetDependency */,
+			);
+			name = MarvelForKeynoteTests;
+			productName = KeynoteToMarvelTests;
+			productReference = 8259CBE720333DA500316ECB /* MarvelForKeynoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8259CBF120333DA500316ECB /* MarvelForKeynoteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8259CC0120333DA500316ECB /* Build configuration list for PBXNativeTarget "MarvelForKeynoteUITests" */;
+			buildPhases = (
+				2F915094BC11FB62DD7AF526 /* [CP] Check Pods Manifest.lock */,
+				8259CBEE20333DA500316ECB /* Sources */,
+				8259CBEF20333DA500316ECB /* Frameworks */,
+				8259CBF020333DA500316ECB /* Resources */,
+				4ECFD1AFE10B616CEEA6024B /* [CP] Embed Pods Frameworks */,
+				E2905D32607FD239D9A5B169 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8259CBF420333DA500316ECB /* PBXTargetDependency */,
+			);
+			name = MarvelForKeynoteUITests;
+			productName = KeynoteToMarvelUITests;
+			productReference = 8259CBF220333DA500316ECB /* MarvelForKeynoteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8259CBCD20333DA400316ECB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Marvel Prototyping";
+				TargetAttributes = {
+					8259CBD420333DA500316ECB = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					8259CBE620333DA500316ECB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8259CBD420333DA500316ECB;
+					};
+					8259CBF120333DA500316ECB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8259CBD420333DA500316ECB;
+					};
+				};
+			};
+			buildConfigurationList = 8259CBD020333DA400316ECB /* Build configuration list for PBXProject "MarvelForKeynote" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8259CBCC20333DA400316ECB;
+			productRefGroup = 8259CBD620333DA500316ECB /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8259CC31203391BE00316ECB /* Products */;
+					ProjectRef = 8259CC30203391BE00316ECB /* ScriptingUtilities.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8259CBD420333DA500316ECB /* MarvelForKeynote */,
+				8259CBE620333DA500316ECB /* MarvelForKeynoteTests */,
+				8259CBF120333DA500316ECB /* MarvelForKeynoteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8259CC35203391BE00316ECB /* ScriptingUtilities.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ScriptingUtilities.framework;
+			remoteRef = 8259CC34203391BE00316ECB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8259CBD320333DA500316ECB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8286AC66205984AF00FE88CB /* aeroplane_2.png in Resources */,
+				8286AC7E205984AF00FE88CB /* aeroplane_87.png in Resources */,
+				8286AC9B205984AF00FE88CB /* aeroplane_81.png in Resources */,
+				8286AC88205984AF00FE88CB /* aeroplane_54.png in Resources */,
+				8286ACC4205984AF00FE88CB /* aeroplane_121.png in Resources */,
+				8286AC7B205984AF00FE88CB /* aeroplane_44.png in Resources */,
+				8286AC84205984AF00FE88CB /* aeroplane_4.png in Resources */,
+				8286AC89205984AF00FE88CB /* aeroplane_68.png in Resources */,
+				8286AC74205984AF00FE88CB /* aeroplane_1.png in Resources */,
+				8286AC7D205984AF00FE88CB /* aeroplane_93.png in Resources */,
+				8286AC4D205984AF00FE88CB /* aeroplane_65.png in Resources */,
+				8286ACBA205984AF00FE88CB /* aeroplane_122.png in Resources */,
+				8286ACB6205984AF00FE88CB /* aeroplane_23.png in Resources */,
+				8286AC60205984AF00FE88CB /* aeroplane_63.png in Resources */,
+				8286AC50205984AF00FE88CB /* aeroplane_159.png in Resources */,
+				8286AC1F205984AF00FE88CB /* aeroplane_110.png in Resources */,
+				8286ACAE205984AF00FE88CB /* aeroplane_26.png in Resources */,
+				8286AC30205984AF00FE88CB /* aeroplane_16.png in Resources */,
+				8286AC51205984AF00FE88CB /* aeroplane_165.png in Resources */,
+				8286AC24205984AF00FE88CB /* aeroplane_39.png in Resources */,
+				8286AC8E205984AF00FE88CB /* aeroplane_82.png in Resources */,
+				8286AC7F205984AF00FE88CB /* aeroplane_0.png in Resources */,
+				8286ACB8205984AF00FE88CB /* aeroplane_36.png in Resources */,
+				8286AC8A205984AF00FE88CB /* aeroplane_69.png in Resources */,
+				8286AC76205984AF00FE88CB /* aeroplane_92.png in Resources */,
+				8286AC99205984AF00FE88CB /* aeroplane_42.png in Resources */,
+				8286ACC0205984AF00FE88CB /* aeroplane_20.png in Resources */,
+				8259CBDD20333DA500316ECB /* Assets.xcassets in Resources */,
+				8286AC9E205984AF00FE88CB /* aeroplane_156.png in Resources */,
+				8286AC36205984AF00FE88CB /* aeroplane_115.png in Resources */,
+				8286AC4C205984AF00FE88CB /* aeroplane_71.png in Resources */,
+				8286AC9F205984AF00FE88CB /* aeroplane_142.png in Resources */,
+				8286ACBE205984AF00FE88CB /* aeroplane_134.png in Resources */,
+				8286AC5C205984AF00FE88CB /* aeroplane_162.png in Resources */,
+				8286AC92205984AF00FE88CB /* aeroplane_143.png in Resources */,
+				8286AC22205984AF00FE88CB /* aeroplane_10.png in Resources */,
+				8286ACA4205984AF00FE88CB /* aeroplane_31.png in Resources */,
+				8286AC96205984AF00FE88CB /* aeroplane_80.png in Resources */,
+				8286ACAA205984AF00FE88CB /* aeroplane_130.png in Resources */,
+				8286AC7A205984AF00FE88CB /* aeroplane_50.png in Resources */,
+				8286AC56205984AF00FE88CB /* aeroplane_49.png in Resources */,
+				8286ACB9205984AF00FE88CB /* aeroplane_22.png in Resources */,
+				8286AC2D205984AF00FE88CB /* aeroplane_112.png in Resources */,
+				8286ACA8205984AF00FE88CB /* aeroplane_18.png in Resources */,
+				8286AC67205984AF00FE88CB /* aeroplane_91.png in Resources */,
+				8286ACB2205984AF00FE88CB /* aeroplane_127.png in Resources */,
+				8286AC46205984AF00FE88CB /* aeroplane_164.png in Resources */,
+				8286AC79205984AF00FE88CB /* aeroplane_51.png in Resources */,
+				8286ACB1205984AF00FE88CB /* aeroplane_27.png in Resources */,
+				8286ACC1205984AF00FE88CB /* aeroplane_21.png in Resources */,
+				8286AC59205984AF00FE88CB /* aeroplane_60.png in Resources */,
+				8286AC6E205984AF00FE88CB /* aeroplane_90.png in Resources */,
+				8286AC8C205984AF00FE88CB /* aeroplane_41.png in Resources */,
+				8286ACA7205984AF00FE88CB /* aeroplane_30.png in Resources */,
+				8286AC77205984AF00FE88CB /* aeroplane_79.png in Resources */,
+				8286AC37205984AF00FE88CB /* aeroplane_15.png in Resources */,
+				8286AC8D205984AF00FE88CB /* aeroplane_96.png in Resources */,
+				8286AC73205984AF00FE88CB /* aeroplane_145.png in Resources */,
+				8286AC48205984AF00FE88CB /* aeroplane_8.png in Resources */,
+				8286AC6B205984AF00FE88CB /* aeroplane_47.png in Resources */,
+				8286AC97205984AF00FE88CB /* aeroplane_57.png in Resources */,
+				8286AC71205984AF00FE88CB /* aeroplane_147.png in Resources */,
+				8286ACB7205984AF00FE88CB /* aeroplane_37.png in Resources */,
+				8286AC29205984AF00FE88CB /* aeroplane_107.png in Resources */,
+				8286AC68205984AF00FE88CB /* aeroplane_85.png in Resources */,
+				8286AC27205984AF00FE88CB /* aeroplane_105.png in Resources */,
+				8286AC87205984AF00FE88CB /* aeroplane_40.png in Resources */,
+				8286AC9C205984AF00FE88CB /* aeroplane_95.png in Resources */,
+				8286AC43205984AF00FE88CB /* aeroplane_72.png in Resources */,
+				8286AC5A205984AF00FE88CB /* aeroplane_160.png in Resources */,
+				8286ACC5205984AF00FE88CB /* aeroplane_109.png in Resources */,
+				8286AC6F205984AF00FE88CB /* aeroplane_3.png in Resources */,
+				8286ACA2205984AF00FE88CB /* aeroplane_119.png in Resources */,
+				8286AC85205984AF00FE88CB /* aeroplane_83.png in Resources */,
+				8286AC3F205984AF00FE88CB /* aeroplane_98.png in Resources */,
+				8286AC23205984AF00FE88CB /* aeroplane_11.png in Resources */,
+				8286AC25205984AF00FE88CB /* aeroplane_139.png in Resources */,
+				8286AC61205984AF00FE88CB /* aeroplane_77.png in Resources */,
+				8286AC9A205984AF00FE88CB /* aeroplane_56.png in Resources */,
+				8286AC4B205984AF00FE88CB /* aeroplane_70.png in Resources */,
+				8286AC2F205984AF00FE88CB /* aeroplane_102.png in Resources */,
+				8286AC63205984AF00FE88CB /* aeroplane_163.png in Resources */,
+				8286ACBC205984AF00FE88CB /* aeroplane_108.png in Resources */,
+				8286AC78205984AF00FE88CB /* aeroplane_45.png in Resources */,
+				8286AC47205984AF00FE88CB /* aeroplane_158.png in Resources */,
+				8286AC55205984AF00FE88CB /* aeroplane_75.png in Resources */,
+				8286AC57205984AF00FE88CB /* aeroplane_48.png in Resources */,
+				8286ACAF205984AF00FE88CB /* aeroplane_32.png in Resources */,
+				8286AC5F205984AF00FE88CB /* aeroplane_62.png in Resources */,
+				8286AC20205984AF00FE88CB /* aeroplane_138.png in Resources */,
+				8286AC90205984AF00FE88CB /* aeroplane_141.png in Resources */,
+				8286AC35205984AF00FE88CB /* aeroplane_101.png in Resources */,
+				8286ACB3205984AF00FE88CB /* aeroplane_133.png in Resources */,
+				8286AC3D205984AF00FE88CB /* aeroplane_128.png in Resources */,
+				8286AC7C205984AF00FE88CB /* aeroplane_78.png in Resources */,
+				8286ACA3205984AF00FE88CB /* aeroplane_19.png in Resources */,
+				8286AC72205984AF00FE88CB /* aeroplane_151.png in Resources */,
+				8286AC1E205984AF00FE88CB /* aeroplane_104.png in Resources */,
+				8286AC91205984AF00FE88CB /* aeroplane_155.png in Resources */,
+				8286ACAD205984AF00FE88CB /* aeroplane_126.png in Resources */,
+				8286AC4F205984AF00FE88CB /* aeroplane_9.png in Resources */,
+				8286AC3B205984AF00FE88CB /* aeroplane_114.png in Resources */,
+				8286AC2A205984AF00FE88CB /* aeroplane_13.png in Resources */,
+				8286ACA0205984AF00FE88CB /* aeroplane_125.png in Resources */,
+				8286AC8F205984AF00FE88CB /* aeroplane_5.png in Resources */,
+				8286AC82205984AF00FE88CB /* aeroplane_154.png in Resources */,
+				8286ACB0205984AF00FE88CB /* aeroplane_33.png in Resources */,
+				8286AC3E205984AF00FE88CB /* aeroplane_167.png in Resources */,
+				8286ACBF205984AF00FE88CB /* aeroplane_34.png in Resources */,
+				8286AC2C205984AF00FE88CB /* aeroplane_106.png in Resources */,
+				8286ACA5205984AF00FE88CB /* aeroplane_25.png in Resources */,
+				8286AC49205984AF00FE88CB /* aeroplane_58.png in Resources */,
+				8286AC69205984AF00FE88CB /* aeroplane_52.png in Resources */,
+				8286ACAC205984AF00FE88CB /* aeroplane_132.png in Resources */,
+				8286ACB5205984AF00FE88CB /* aeroplane_123.png in Resources */,
+				8286ACBD205984AF00FE88CB /* aeroplane_120.png in Resources */,
+				8286AC42205984AF00FE88CB /* aeroplane_66.png in Resources */,
+				8286AC93205984AF00FE88CB /* aeroplane_157.png in Resources */,
+				8286AC86205984AF00FE88CB /* aeroplane_97.png in Resources */,
+				8286ACAB205984AF00FE88CB /* aeroplane_124.png in Resources */,
+				8286AC75205984AF00FE88CB /* aeroplane_86.png in Resources */,
+				8286ACA6205984AF00FE88CB /* aeroplane_24.png in Resources */,
+				8286AC54205984AF00FE88CB /* aeroplane_61.png in Resources */,
+				8286AC34205984AF00FE88CB /* aeroplane_129.png in Resources */,
+				8286ACBB205984AF00FE88CB /* aeroplane_136.png in Resources */,
+				8286AC80205984AF00FE88CB /* aeroplane_144.png in Resources */,
+				8286AC2E205984AF00FE88CB /* aeroplane_116.png in Resources */,
+				8286AC21205984AF00FE88CB /* aeroplane_38.png in Resources */,
+				8286AC94205984AF00FE88CB /* aeroplane_7.png in Resources */,
+				8286AC98205984AF00FE88CB /* aeroplane_43.png in Resources */,
+				8286AC31205984AF00FE88CB /* aeroplane_17.png in Resources */,
+				8286AC2B205984AF00FE88CB /* aeroplane_12.png in Resources */,
+				8286ACC2205984AF00FE88CB /* aeroplane_35.png in Resources */,
+				8286AC33205984AF00FE88CB /* aeroplane_117.png in Resources */,
+				8286ACA1205984AF00FE88CB /* aeroplane_131.png in Resources */,
+				8286AC26205984AF00FE88CB /* aeroplane_111.png in Resources */,
+				8286AC8B205984AF00FE88CB /* aeroplane_55.png in Resources */,
+				8286AC44205984AF00FE88CB /* aeroplane_99.png in Resources */,
+				8286AC39205984AF00FE88CB /* aeroplane_28.png in Resources */,
+				8286AC6D205984AF00FE88CB /* aeroplane_84.png in Resources */,
+				8286AC83205984AF00FE88CB /* aeroplane_140.png in Resources */,
+				8286AC70205984AF00FE88CB /* aeroplane_153.png in Resources */,
+				8286AC4A205984AF00FE88CB /* aeroplane_64.png in Resources */,
+				8286AC28205984AF00FE88CB /* aeroplane_113.png in Resources */,
+				8286AC95205984AF00FE88CB /* aeroplane_94.png in Resources */,
+				8286AC3C205984AF00FE88CB /* aeroplane_100.png in Resources */,
+				8286AC4E205984AF00FE88CB /* aeroplane_59.png in Resources */,
+				8286AC65205984AF00FE88CB /* aeroplane_152.png in Resources */,
+				8286AC6C205984AF00FE88CB /* aeroplane_53.png in Resources */,
+				8259CBE020333DA500316ECB /* Main.storyboard in Resources */,
+				8286AC38205984AF00FE88CB /* aeroplane_29.png in Resources */,
+				8286AC5B205984AF00FE88CB /* aeroplane_148.png in Resources */,
+				8286AC81205984AF00FE88CB /* aeroplane_150.png in Resources */,
+				8286AC45205984AF00FE88CB /* aeroplane_166.png in Resources */,
+				8286AC5D205984AF00FE88CB /* aeroplane_89.png in Resources */,
+				8286AC53205984AF00FE88CB /* aeroplane_161.png in Resources */,
+				8286AC52205984AF00FE88CB /* aeroplane_149.png in Resources */,
+				8286AC41205984AF00FE88CB /* aeroplane_67.png in Resources */,
+				8286ACB4205984AF00FE88CB /* aeroplane_137.png in Resources */,
+				8286AC3A205984AF00FE88CB /* aeroplane_14.png in Resources */,
+				8286AC32205984AF00FE88CB /* aeroplane_103.png in Resources */,
+				8286AC40205984AF00FE88CB /* aeroplane_73.png in Resources */,
+				8286AC64205984AF00FE88CB /* aeroplane_146.png in Resources */,
+				8286AC58205984AF00FE88CB /* aeroplane_74.png in Resources */,
+				8286AC9D205984AF00FE88CB /* aeroplane_6.png in Resources */,
+				8286ACC3205984AF00FE88CB /* aeroplane_135.png in Resources */,
+				8286ACA9205984AF00FE88CB /* aeroplane_118.png in Resources */,
+				8286AC6A205984AF00FE88CB /* aeroplane_46.png in Resources */,
+				8286AC5E205984AF00FE88CB /* aeroplane_76.png in Resources */,
+				8286AC62205984AF00FE88CB /* aeroplane_88.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8259CBE520333DA500316ECB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8259CBF020333DA500316ECB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		027F6A5D721DCF7CD5036249 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarvelForKeynoteTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F915094BC11FB62DD7AF526 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarvelForKeynoteUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4ECFD1AFE10B616CEEA6024B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarvelForKeynoteUITests/Pods-MarvelForKeynoteUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		581AFDA394576C43B38435CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarvelForKeynoteTests/Pods-MarvelForKeynoteTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB87228371C3BFAD1CCA5A58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MarvelForKeynote/Pods-MarvelForKeynote-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MarvelAuth/MarvelAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarvelAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarvelForKeynote/Pods-MarvelForKeynote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C23AD1E9BEB51686AF52DAF8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarvelForKeynote-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB98DCD4BAC91C74F60611E4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarvelForKeynoteTests/Pods-MarvelForKeynoteTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE9C5854548F55534536812D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarvelForKeynote/Pods-MarvelForKeynote-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2905D32607FD239D9A5B169 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MarvelForKeynoteUITests/Pods-MarvelForKeynoteUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8259CBD120333DA500316ECB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8259CC512035B4E700316ECB /* TitleTextField.swift in Sources */,
+				8259CBDB20333DA500316ECB /* SendViewController.swift in Sources */,
+				8259CC622035E3AC00316ECB /* MainWindowController.swift in Sources */,
+				82CD72AE204D848A00E2D93B /* Button.swift in Sources */,
+				8259CBD920333DA500316ECB /* AppDelegate.swift in Sources */,
+				82D7796A205C0E8700408A37 /* SyncingOperation.swift in Sources */,
+				8281A8DF206BEAAC00BE32BA /* Alert.swift in Sources */,
+				8259CC4F2034B2AB00316ECB /* NavBarView.swift in Sources */,
+				8281A8CD206AF5BF00BE32BA /* AuthenticationManager.swift in Sources */,
+				82D7796C205C13B300408A37 /* AsynchronousOperation.swift in Sources */,
+				82CD72A9204D732D00E2D93B /* NoFileViewController.swift in Sources */,
+				82D77957205BE50500408A37 /* Data.swift in Sources */,
+				8259CC0520333DE900316ECB /* KeynoteExporter.swift in Sources */,
+				8281A8D7206BD82500BE32BA /* Secrets.swift in Sources */,
+				82032C42205ACAE700627F75 /* MarvelContent.swift in Sources */,
+				8259CC1B20338AEF00316ECB /* KeynoteScripting.swift in Sources */,
+				8259CC43203490A900316ECB /* HexColors.swift in Sources */,
+				8259CC1A20338AEF00316ECB /* Keynote.swift in Sources */,
+				82CD72BB204D9CF300E2D93B /* MarvelProject.swift in Sources */,
+				82CD72AC204D75B100E2D93B /* SetFileViewController.swift in Sources */,
+				82D77959205BE9AE00408A37 /* Request.swift in Sources */,
+				8259CC3D203397C600316ECB /* DragView.swift in Sources */,
+				8286A8C820597C2100FE88CB /* SyncingViewController.swift in Sources */,
+				8203085420768716008942C1 /* Token+Helpers.swift in Sources */,
+				82CD72C5204DC50E00E2D93B /* NSButton.swift in Sources */,
+				82032C40205AC95E00627F75 /* MarvelScreen.swift in Sources */,
+				82CD72B2204D936B00E2D93B /* Calls.swift in Sources */,
+				8259CC4D20349A6400316ECB /* ConnectViewController.swift in Sources */,
+				82D77967205C0E0000408A37 /* SyncingOperations.swift in Sources */,
+				8281A8E2206BF09700BE32BA /* Model.xcdatamodeld in Sources */,
+				820308982077CB0F008942C1 /* Array.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8259CBE320333DA500316ECB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8259CBEC20333DA500316ECB /* MarvelForKeynoteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8259CBEE20333DA500316ECB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8259CBF720333DA500316ECB /* MarvelForKeynoteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8259CBE920333DA500316ECB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8259CBD420333DA500316ECB /* MarvelForKeynote */;
+			targetProxy = 8259CBE820333DA500316ECB /* PBXContainerItemProxy */;
+		};
+		8259CBF420333DA500316ECB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8259CBD420333DA500316ECB /* MarvelForKeynote */;
+			targetProxy = 8259CBF320333DA500316ECB /* PBXContainerItemProxy */;
+		};
+		8259CC3A203391CD00316ECB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ScriptingUtilities;
+			targetProxy = 8259CC39203391CD00316ECB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8259CBDE20333DA500316ECB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8259CBDF20333DA500316ECB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8259CBF920333DA500316ECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8259CBFA20333DA500316ECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		8259CBFC20333DA500316ECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34BBE71CD40B8DE45B609C61 /* Pods-MarvelForKeynote.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MarvelForKeynote/MarvelForKeynote.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7C95EP5VB7;
+				INFOPLIST_FILE = "$(SRCROOT)/MarvelForKeynote/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marvelprototyping.marvelforkeynote;
+				PRODUCT_NAME = "Marvel for Keynote";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		8259CBFD20333DA500316ECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9E5BE3333A8718AB710530E /* Pods-MarvelForKeynote.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MarvelForKeynote/MarvelForKeynote.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7C95EP5VB7;
+				INFOPLIST_FILE = "$(SRCROOT)/MarvelForKeynote/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marvelprototyping.marvelforkeynote;
+				PRODUCT_NAME = "Marvel for Keynote";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		8259CBFF20333DA500316ECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD04E9091E8B327025B20CA6 /* Pods-MarvelForKeynoteTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7C95EP5VB7;
+				INFOPLIST_FILE = MarvelToKeynoteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marvelprototyping.MarvelToKeynoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarvelForKeynote.app/Contents/MacOS/MarvelForKeynote";
+			};
+			name = Debug;
+		};
+		8259CC0020333DA500316ECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E110D18BEBD338A30FF9CB1 /* Pods-MarvelForKeynoteTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7C95EP5VB7;
+				INFOPLIST_FILE = MarvelToKeynoteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marvelprototyping.MarvelToKeynoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarvelForKeynote.app/Contents/MacOS/MarvelForKeynote";
+			};
+			name = Release;
+		};
+		8259CC0220333DA500316ECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 528D83B86B0670B679DEE840 /* Pods-MarvelForKeynoteUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7C95EP5VB7;
+				INFOPLIST_FILE = KeynoteToMarvelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marvelprototyping.KeynoteToMarvelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = KeynoteToMarvel;
+			};
+			name = Debug;
+		};
+		8259CC0320333DA500316ECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0462AF2E09E1AD01442F047F /* Pods-MarvelForKeynoteUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7C95EP5VB7;
+				INFOPLIST_FILE = KeynoteToMarvelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marvelprototyping.KeynoteToMarvelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = KeynoteToMarvel;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8259CBD020333DA400316ECB /* Build configuration list for PBXProject "MarvelForKeynote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8259CBF920333DA500316ECB /* Debug */,
+				8259CBFA20333DA500316ECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8259CBFB20333DA500316ECB /* Build configuration list for PBXNativeTarget "MarvelForKeynote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8259CBFC20333DA500316ECB /* Debug */,
+				8259CBFD20333DA500316ECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8259CBFE20333DA500316ECB /* Build configuration list for PBXNativeTarget "MarvelForKeynoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8259CBFF20333DA500316ECB /* Debug */,
+				8259CC0020333DA500316ECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8259CC0120333DA500316ECB /* Build configuration list for PBXNativeTarget "MarvelForKeynoteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8259CC0220333DA500316ECB /* Debug */,
+				8259CC0320333DA500316ECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8281A8E0206BF09700BE32BA /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8281A8E1206BF09700BE32BA /* Model.xcdatamodel */,
+			);
+			currentVersion = 8281A8E1206BF09700BE32BA /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8259CBCD20333DA400316ECB /* Project object */;
+}

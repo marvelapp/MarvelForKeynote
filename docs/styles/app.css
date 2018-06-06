@@ -1,0 +1,286 @@
+body, html {
+     width: 100%;
+     height: 100%;
+     margin: 0;
+ }
+
+ body {
+  background: #EBF1F7;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system,"Helvetica Neue",sans-serif;
+}
+
+.github{
+  position: absolute;
+  bottom: 37px;
+  right: -35px;
+  width: 143px;
+  overflow: hidden;
+  -webkit-animation-delay: 1s;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.center-element {
+  text-align: center;
+  width: 317px;
+}
+
+.screenshot {
+  width: 317px;
+  height: 445px;
+  background-image: url("../images/preview.png");
+  display: inline-block;
+}
+
+.download-button {
+  width: 187px;
+  height: 56px;
+  background-image: url("../images/mac-app-store.png");
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.clouds {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.cloud {
+  background-image: url("../images/cloud.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+
+	-webkit-animation: moveclouds 40s linear infinite forwards;
+	-moz-animation: moveclouds 40s linear infinite forwards;
+	-o-animation: moveclouds 40s linear infinite forwards;
+
+}
+
+/* ==========================================================================
+   Marvel Integration Badge
+   ========================================================================== */
+
+.marvel-integration-badge {
+  width: 133px;
+  height: 38px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #8792a1;
+  display: block;
+  top: 0;
+  position: absolute;
+  right: 80px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 4px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.marvel-integration-badge:hover {
+  background: #727b87;
+}
+
+.marvel-integration-badge .marvel-logo {
+  margin-top: 5px;
+}
+
+
+/* ==========================================================================
+   Retina
+   ========================================================================== */
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  .screenshot {
+    background-size: 317px 445px;
+    background-image: url("../images/preview@2x.png");
+  }
+
+  .download-button {
+    background-size: 187px 56px;
+    background-image: url("../images/mac-app-store@2x.png");
+  }
+
+}
+
+/* ==========================================================================
+   Clouds
+   ========================================================================== */
+
+.x1 {
+
+  left: 2%;
+  top: 2%;
+
+}
+
+.x2 {
+	left: 50%;
+  top: 30%;
+
+	-webkit-transform: scale(2);
+	-moz-transform: scale(2);
+	transform: scale(2);
+
+}
+
+.x3 {
+	left: 45%;
+  top: 65%;
+
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	transform: scale(1.5);
+
+}
+
+.x4 {
+	left: 35%;
+  top: 84%;
+
+	-webkit-transform: scale(0.75);
+	-moz-transform: scale(0.75);
+	transform: scale(0.75);
+
+}
+
+.x5 {
+	left: 15%;
+  top: 20%;
+
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	transform: scale(1.5);
+
+}
+
+.x6 {
+	left: 15%;
+  top: 94%;
+
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	transform: scale(1.2);
+
+}
+
+.x7 {
+	left: 25%;
+  top: 45%;
+
+}
+
+.x8 {
+	left: 5%;
+  top: 65%;
+
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+
+}
+
+.x9 {
+
+  left: 65%;
+  top: 10%;
+
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	transform: scale(0.9);
+
+}
+
+.x10 {
+
+  left: 76%;
+  top: 50%;
+
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	transform: scale(1.2);
+
+}
+
+.x11 {
+
+  left: 65%;
+  top: 82%;
+
+  -webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	transform: scale(1.4);
+}
+
+.x12 {
+
+  left: 95%;
+  top: 17%;
+
+  -webkit-transform: scale(2);
+	-moz-transform: scale(2);
+	transform: scale(2);
+}
+
+.x12 {
+
+  left: 95%;
+  top: 17%;
+
+  -webkit-transform: scale(2);
+	-moz-transform: scale(2);
+	transform: scale(2);
+}
+
+.x13 {
+
+  left: 95%;
+  top: 74%;
+
+  -webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+@-webkit-keyframes moveclouds {
+	0% {margin-left: 0%;}
+	50% {margin-left: -50%}
+  100% {margin-left: 0%;}
+}
+@-moz-keyframes moveclouds {
+  0% {margin-left: 0%;}
+	50% {margin-left: -50%}
+  100% {margin-left: 0%;}
+}
+@-o-keyframes moveclouds {
+  0% {margin-left: 0%;}
+	50% {margin-left: -50%}
+  100% {margin-left: 0%;}
+}

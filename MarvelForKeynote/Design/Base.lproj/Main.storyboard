@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
+        <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
+    </dependencies>
+    <scenes>
+        <!--Application-->
+        <scene sceneID="JPo-4y-FX3">
+            <objects>
+                <application id="hnw-xV-0zn" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+                        <items>
+                            <menuItem title="MarvelForKeynote" id="1Xt-HY-uBw">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="MarvelForKeynote" systemMenu="apple" id="uQy-DD-JDr">
+                                    <items>
+                                        <menuItem title="Services" id="NMo-om-nkz">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
+                                        <menuItem title="Hide MarvelForKeynote" keyEquivalent="h" id="Olw-nP-bQN">
+                                            <connections>
+                                                <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="hideOtherApplications:" target="Ady-hI-5gd" id="VT4-aY-XCT"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Show All" id="Kd2-mp-pUS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="unhideAllApplications:" target="Ady-hI-5gd" id="Dhg-Le-xox"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                                        <menuItem title="Quit MarvelForKeynote" keyEquivalent="q" id="4sb-4s-VLi">
+                                            <connections>
+                                                <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
+                    </connections>
+                </application>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Marvel_for_Keynote" customModuleProvider="target"/>
+                <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="0.0"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="R2V-B0-nI4">
+            <objects>
+                <windowController id="B8D-0N-5wS" customClass="MainWindowController" customModule="Marvel_for_Keynote" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" tabbingMode="disallowed" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" fullSizeContentView="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="295" height="423"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <toolbar key="toolbar" implicitIdentifier="B2CE7F89-FD35-42EF-BE2A-E6040A055C91" autosavesConfiguration="NO" allowsUserCustomization="NO" showsBaselineSeparator="NO" displayMode="iconOnly" sizeMode="regular" id="Chp-Yo-eHp">
+                            <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="7C755CC6-D5F4-4E5E-87AA-BAA98FD44313" label="" paletteLabel="" image="cog" id="b19-KN-pg8" userLabel="Settings">
+                                    <nil key="toolTip"/>
+                                    <size key="minSize" width="30" height="30"/>
+                                    <size key="maxSize" width="30" height="30"/>
+                                    <button key="view" verticalHuggingPriority="750" id="ARu-ix-j6j">
+                                        <rect key="frame" x="0.0" y="14" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="HnT-Mf-Ngq"/>
+                                            <constraint firstAttribute="height" constant="30" id="hSb-Hx-vBQ"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="cog" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="L3X-Gf-pQZ">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="settingsWithButton:" target="B8D-0N-5wS" id="3T5-Qb-ghZ"/>
+                                        </connections>
+                                    </button>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="3CW-KF-r88"/>
+                            </allowedToolbarItems>
+                            <defaultToolbarItems>
+                                <toolbarItem reference="3CW-KF-r88"/>
+                                <toolbarItem reference="b19-KN-pg8"/>
+                            </defaultToolbarItems>
+                        </toolbar>
+                        <connections>
+                            <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <outlet property="settingsButton" destination="ARu-ix-j6j" id="6J9-b5-nMd"/>
+                        <segue destination="MK8-4h-CXe" kind="relationship" relationship="window.shadowedContentViewController" id="a0t-SN-GbG"/>
+                    </connections>
+                </windowController>
+                <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-367" y="253"/>
+        </scene>
+        <!--Connect View Controller-->
+        <scene sceneID="jQ0-eV-cqx">
+            <objects>
+                <viewController identifier="connectViewController" storyboardIdentifier="connectViewController" id="MK8-4h-CXe" customClass="ConnectViewController" customModule="Marvel_for_Keynote" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="XlJ-BH-oc8">
+                        <rect key="frame" x="0.0" y="0.0" width="295" height="428"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mZ3-ZI-gfd">
+                                <rect key="frame" x="7" y="218" width="268" height="137"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="137" id="Pjw-1T-29d"/>
+                                    <constraint firstAttribute="width" constant="268" id="f0i-LG-XjH"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="paper-plane" id="SCZ-z3-KHL"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9x2-IA-BYa" customClass="TitleTextField" customModule="Marvel_for_Keynote" customModuleProvider="target">
+                                <rect key="frame" x="26" y="146" width="243" height="42"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" id="qhK-94-hRD">
+                                    <font key="font" metaFont="systemMedium" size="17"/>
+                                    <string key="title">Sync your Keynote file to 
+a Marvel project.</string>
+                                    <color key="textColor" red="0.14901960784313725" green="0.20392156862745098" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="yaY-xK-Ky9" customClass="NavBarView" customModule="Marvel_for_Keynote" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="390" width="295" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="Cmc-Yy-QoQ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Marvel for Keynote"/>
+                                </userDefinedRuntimeAttributes>
+                            </customView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ROs-Tn-CLH" customClass="Button" customModule="Marvel_for_Keynote" customModuleProvider="target">
+                                <rect key="frame" x="28" y="82" width="239" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Heb-cV-jha"/>
+                                </constraints>
+                                <buttonCell key="cell" type="square" title="Connect with Marvel" bezelStyle="shadowlessSquare" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zQa-u4-Phz">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="styleAdapter">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="connectWithButton:" target="MK8-4h-CXe" id="1cu-aR-Eh2"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9Hc-mN-kyD" customClass="Button" customModule="Marvel_for_Keynote" customModuleProvider="target">
+                                <rect key="frame" x="76" y="30" width="144" height="32"/>
+                                <buttonCell key="cell" type="push" title="Create a account" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ycC-xj-hvY">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="styleAdapter">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="underlineFrom">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="underlineLength">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="createWithButton:" target="MK8-4h-CXe" id="0mj-YW-4TE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="9x2-IA-BYa" firstAttribute="top" secondItem="mZ3-ZI-gfd" secondAttribute="bottom" constant="30" id="9vI-aX-FM1"/>
+                            <constraint firstItem="9Hc-mN-kyD" firstAttribute="centerX" secondItem="ROs-Tn-CLH" secondAttribute="centerX" id="E1S-fi-DKG"/>
+                            <constraint firstItem="ROs-Tn-CLH" firstAttribute="leading" secondItem="XlJ-BH-oc8" secondAttribute="leading" constant="28" id="Glo-d5-SNv"/>
+                            <constraint firstItem="yaY-xK-Ky9" firstAttribute="leading" secondItem="XlJ-BH-oc8" secondAttribute="leading" id="NLw-3F-Ng8"/>
+                            <constraint firstAttribute="trailing" secondItem="9x2-IA-BYa" secondAttribute="trailing" constant="28" id="OQY-yI-Hjb"/>
+                            <constraint firstAttribute="bottom" secondItem="9Hc-mN-kyD" secondAttribute="bottom" constant="37" id="U1o-f1-r4x"/>
+                            <constraint firstItem="mZ3-ZI-gfd" firstAttribute="top" secondItem="yaY-xK-Ky9" secondAttribute="bottom" constant="35" id="Y4G-rR-xpY"/>
+                            <constraint firstItem="ROs-Tn-CLH" firstAttribute="top" secondItem="9x2-IA-BYa" secondAttribute="bottom" constant="24" id="a7E-I6-kSs"/>
+                            <constraint firstItem="9Hc-mN-kyD" firstAttribute="top" secondItem="ROs-Tn-CLH" secondAttribute="bottom" constant="24" id="b7R-tw-BoN"/>
+                            <constraint firstItem="yaY-xK-Ky9" firstAttribute="top" secondItem="XlJ-BH-oc8" secondAttribute="top" id="eXD-dS-ENJ"/>
+                            <constraint firstAttribute="trailing" secondItem="ROs-Tn-CLH" secondAttribute="trailing" constant="28" id="iIn-ve-X2x"/>
+                            <constraint firstItem="9x2-IA-BYa" firstAttribute="leading" secondItem="XlJ-BH-oc8" secondAttribute="leading" constant="28" id="uXz-Pe-jcw"/>
+                            <constraint firstItem="mZ3-ZI-gfd" firstAttribute="centerX" secondItem="XlJ-BH-oc8" secondAttribute="centerX" constant="-7" id="xXU-N4-nxD"/>
+                            <constraint firstAttribute="trailing" secondItem="yaY-xK-Ky9" secondAttribute="trailing" id="yQ5-2M-yMF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="QdF-Dn-dcJ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-727" y="923"/>
+        </scene>
+        <!--Send View Controller-->
+        <scene sceneID="hIz-AP-VOD">
+            <objects>
+                <viewController identifier="sendViewController" storyboardIdentifier="sendViewController" id="XfG-lQ-9wD" customClass="SendViewController" customModule="Marvel_for_Keynote" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="295" height="429"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="ohe-PP-Vfh" userLabel="Drop Area">
+                                <rect key="frame" x="0.0" y="131" width="295" height="260"/>
+                                <subviews>
+                                    <containerView translatesAutoresizingMaskIntoConstraints="NO" id="Ywr-Tw-dPU" userLabel="No File View">
+                                        <rect key="frame" x="0.0" y="0.0" width="295" height="260"/>
+                                        <connections>
+                                            <segue destination="yjY-aE-bXA" kind="embed" id="Hfp-Af-sJO"/>
+                                        </connections>
+                                    </containerView>
+                                    <containerView translatesAutoresizingMaskIntoConstraints="NO" id="UOA-kU-Fao">
+                                        <rect key="frame" x="0.0" y="0.0" width="295" height="260"/>
+                                        <connections>
+                                            <segue destination="anN-9Q-qHV" kind="embed" id="FfV-E0-oy8"/>
+                                        </connections>
+                                    </containerView>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="w3d-lj-jji" customClass="DragView" customModule="Marvel_for_Keynote" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="295" height="260"/>
+                                    </customView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="w3d-lj-jji" firstAttribute="leading" secondItem="ohe-PP-Vfh" secondAttribute="leading" id="2tP-CA-6uF"/>
+                                    <constraint firstItem="w3d-lj-jji" firstAttribute="top" secondItem="ohe-PP-Vfh" secondAttribute="top" id="3nK-g0-Te4"/>
+                                    <constraint firstAttribute="trailing" secondItem="UOA-kU-Fao" secondAttribute="trailing" id="6d9-MA-BBC"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ywr-Tw-dPU" secondAttribute="bottom" id="AvD-Qd-Cfl"/>
+                                    <constraint firstItem="UOA-kU-Fao" firstAttribute="top" secondItem="ohe-PP-Vfh" secondAttribute="top" id="C98-mw-r71"/>
+                                    <constraint firstItem="Ywr-Tw-dPU" firstAttribute="leading" secondItem="ohe-PP-Vfh" secondAttribute="leading" id="EhQ-DI-W31"/>
+                                    <constraint firstAttribute="height" constant="260" id="R2c-Nr-euP"/>
+                                    <constraint firstItem="Ywr-Tw-dPU" firstAttribute="top" secondItem="ohe-PP-Vfh" secondAttribute="top" id="TTC-zM-3ga"/>
+                                    <constraint firstAttribute="bottom" secondItem="UOA-kU-Fao" secondAttribute="bottom" id="V9U-Ft-Gq1"/>
+                                    <constraint firstAttribute="bottom" secondItem="w3d-lj-jji" secondAttribute="bottom" id="e2T-TE-ZVB"/>
+                                    <constraint firstAttribute="trailing" secondItem="w3d-lj-jji" secondAttribute="trailing" id="irN-YC-kCe"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ywr-Tw-dPU" secondAttribute="trailing" id="tid-U7-SWG"/>
+                                    <constraint firstItem="UOA-kU-Fao" firstAttribute="leading" secondItem="ohe-PP-Vfh" secondAttribute="leading" id="wRg-Kv-IWv"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="20U-cl-WXd">
+                                <rect key="frame" x="0.0" y="130" width="295" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="0rj-Na-Gbj"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="4xX-AT-QaK">
+                                <rect key="frame" x="28" y="28" width="239" height="77"/>
+                                <subviews>
+                                    <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Wf0-Vb-a7p">
+                                        <rect key="frame" x="47" y="53" width="195" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="190" id="4tw-fW-stu"/>
+                                        </constraints>
+                                        <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="5w9-h7-5RO">
+                                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="menu"/>
+                                            <menu key="menu" id="fTf-sZ-Txo"/>
+                                        </popUpButtonCell>
+                                    </popUpButton>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tP4-CJ-CYa" customClass="Button" customModule="Marvel_for_Keynote" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="239" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="yT3-YN-OTT"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="square" title="Sync" bezelStyle="shadowlessSquare" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="bo7-2A-I2g">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="styleAdapter">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="syncWithButton:" target="XfG-lQ-9wD" id="73A-Em-Joi"/>
+                                        </connections>
+                                    </button>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YYJ-FI-KGw">
+                                        <rect key="frame" x="-2" y="59" width="45" height="16"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Project" id="JzI-Jh-axc">
+                                            <font key="font" metaFont="cellTitle"/>
+                                            <color key="textColor" red="0.51764705882352935" green="0.5725490196078431" blue="0.65098039215686276" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="tP4-CJ-CYa" firstAttribute="top" secondItem="Wf0-Vb-a7p" secondAttribute="bottom" constant="16" id="A0N-LN-hbY"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wf0-Vb-a7p" secondAttribute="trailing" id="Chi-6A-2pb"/>
+                                    <constraint firstAttribute="trailing" secondItem="tP4-CJ-CYa" secondAttribute="trailing" id="NoU-eA-r6M"/>
+                                    <constraint firstItem="YYJ-FI-KGw" firstAttribute="top" secondItem="4xX-AT-QaK" secondAttribute="top" constant="2" id="ZfN-ws-9fW"/>
+                                    <constraint firstItem="YYJ-FI-KGw" firstAttribute="leading" secondItem="4xX-AT-QaK" secondAttribute="leading" id="gnF-A3-eYH"/>
+                                    <constraint firstItem="Wf0-Vb-a7p" firstAttribute="leading" secondItem="YYJ-FI-KGw" secondAttribute="trailing" constant="8" id="lmt-K9-Dw6"/>
+                                    <constraint firstAttribute="bottom" secondItem="tP4-CJ-CYa" secondAttribute="bottom" id="mh6-2H-J1V"/>
+                                    <constraint firstItem="tP4-CJ-CYa" firstAttribute="leading" secondItem="4xX-AT-QaK" secondAttribute="leading" id="ss4-mP-Tq6"/>
+                                    <constraint firstItem="Wf0-Vb-a7p" firstAttribute="top" secondItem="4xX-AT-QaK" secondAttribute="top" id="tIv-bI-yL2"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Bia-VL-RBJ" customClass="NavBarView" customModule="Marvel_for_Keynote" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="391" width="295" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="cBL-48-BKa"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Marvel for Keynote"/>
+                                </userDefinedRuntimeAttributes>
+                            </customView>
+                            <containerView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gC3-0R-1Mz" userLabel="Syncing View">
+                                <rect key="frame" x="0.0" y="0.0" width="295" height="391"/>
+                                <connections>
+                                    <segue destination="YPI-5I-6j7" kind="embed" id="UvC-u7-fzF"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ohe-PP-Vfh" secondAttribute="trailing" id="0ws-nI-hSN"/>
+                            <constraint firstAttribute="bottom" secondItem="4xX-AT-QaK" secondAttribute="bottom" constant="28" id="33v-Cg-ZfB"/>
+                            <constraint firstItem="4xX-AT-QaK" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="28" id="8UU-tG-Ci6"/>
+                            <constraint firstAttribute="trailing" secondItem="4xX-AT-QaK" secondAttribute="trailing" constant="28" id="Cua-72-Xan"/>
+                            <constraint firstItem="gC3-0R-1Mz" firstAttribute="top" secondItem="Bia-VL-RBJ" secondAttribute="bottom" id="EJ0-LR-buU"/>
+                            <constraint firstAttribute="trailing" secondItem="20U-cl-WXd" secondAttribute="trailing" id="KWB-sF-cx4"/>
+                            <constraint firstItem="4xX-AT-QaK" firstAttribute="top" secondItem="20U-cl-WXd" secondAttribute="bottom" constant="25" id="Pkf-1U-wRY"/>
+                            <constraint firstItem="Bia-VL-RBJ" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="W0C-JZ-5Kq"/>
+                            <constraint firstItem="20U-cl-WXd" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="Xjy-BX-YmH"/>
+                            <constraint firstItem="Bia-VL-RBJ" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="Y6X-gn-dOo"/>
+                            <constraint firstItem="gC3-0R-1Mz" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="YF0-Lu-NCW"/>
+                            <constraint firstItem="ohe-PP-Vfh" firstAttribute="top" secondItem="Bia-VL-RBJ" secondAttribute="bottom" id="ZWV-Yh-2Xx"/>
+                            <constraint firstAttribute="trailing" secondItem="gC3-0R-1Mz" secondAttribute="trailing" id="cuw-07-ooB"/>
+                            <constraint firstItem="20U-cl-WXd" firstAttribute="top" secondItem="ohe-PP-Vfh" secondAttribute="bottom" id="gRR-fJ-4Mh"/>
+                            <constraint firstAttribute="trailing" secondItem="Bia-VL-RBJ" secondAttribute="trailing" id="gkR-NX-vh0"/>
+                            <constraint firstAttribute="bottom" secondItem="gC3-0R-1Mz" secondAttribute="bottom" id="thy-TE-NRK"/>
+                            <constraint firstItem="ohe-PP-Vfh" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="uo5-2w-55H"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="deviderView" destination="20U-cl-WXd" id="f5a-ST-QLl"/>
+                        <outlet property="dragView" destination="w3d-lj-jji" id="EnO-k4-mBl"/>
+                        <outlet property="noFileView" destination="Ywr-Tw-dPU" id="kVP-99-zCB"/>
+                        <outlet property="projectsPopUpButton" destination="Wf0-Vb-a7p" id="9aY-sk-4GH"/>
+                        <outlet property="setFileView" destination="UOA-kU-Fao" id="zkB-k0-RoT"/>
+                        <outlet property="syncButton" destination="tP4-CJ-CYa" id="tqk-d8-5Ew"/>
+                        <outlet property="syncingView" destination="gC3-0R-1Mz" id="OdJ-8s-i1W"/>
+                    </connections>
+                </viewController>
+                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-342.5" y="922.5"/>
+        </scene>
+        <!--No File View Controller-->
+        <scene sceneID="H2M-uX-LhQ">
+            <objects>
+                <viewController id="yjY-aE-bXA" customClass="NoFileViewController" customModule="Marvel_for_Keynote" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="a5j-Hb-obz">
+                        <rect key="frame" x="0.0" y="0.0" width="295" height="260"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UVB-1b-u5O">
+                                <rect key="frame" x="7" y="88" width="268" height="137"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="137" id="oNG-jW-dtf"/>
+                                    <constraint firstAttribute="width" constant="268" id="wm6-07-co1"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="paper-plane" id="Wd6-C2-mZF"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="J8O-56-5IC" userLabel="Sync your Keynote file to  a Marvel project." customClass="TitleTextField" customModule="Marvel_for_Keynote" customModuleProvider="target">
+                                <rect key="frame" x="-2" y="47" width="299" height="21"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Drag &amp; Drop" id="D8O-b8-9m4">
+                                    <font key="font" metaFont="systemMedium" size="17"/>
+                                    <color key="textColor" red="0.14901960780000001" green="0.20392156859999999" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Np5-je-tuD" customClass="Button" customModule="Marvel_for_Keynote" customModuleProvider="target">
+                                <rect key="frame" x="29" y="19" width="238" height="32"/>
+                                <buttonCell key="cell" type="push" title="your keynote file here, or browse" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="sZN-Qf-sIy">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="styleAdapter">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="underlineFrom">
+                                        <integer key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="underlineLength">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="browseFileWithButton:" target="yjY-aE-bXA" id="AGp-2h-h9j"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="J8O-56-5IC" secondAttribute="trailing" id="EWV-ui-9Lg"/>
+                            <constraint firstItem="J8O-56-5IC" firstAttribute="top" secondItem="UVB-1b-u5O" secondAttribute="bottom" constant="20" id="HOz-Rj-w0J"/>
+                            <constraint firstItem="Np5-je-tuD" firstAttribute="centerX" secondItem="a5j-Hb-obz" secondAttribute="centerX" id="Ox9-n4-nKX"/>
+                            <constraint firstItem="UVB-1b-u5O" firstAttribute="top" secondItem="a5j-Hb-obz" secondAttribute="top" constant="35" id="Rtj-d0-M9G"/>
+                            <constraint firstItem="Np5-je-tuD" firstAttribute="top" secondItem="J8O-56-5IC" secondAttribute="bottom" id="Vbl-zA-XRL"/>
+                            <constraint firstItem="UVB-1b-u5O" firstAttribute="centerX" secondItem="a5j-Hb-obz" secondAttribute="centerX" constant="-7" id="Z6F-wQ-wtc"/>
+                            <constraint firstItem="J8O-56-5IC" firstAttribute="leading" secondItem="a5j-Hb-obz" secondAttribute="leading" id="uW8-ey-t36"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="Kce-eq-lmw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82.5" y="728"/>
+        </scene>
+        <!--Set File View Controller-->
+        <scene sceneID="dm9-IX-RN9">
+            <objects>
+                <viewController id="anN-9Q-qHV" customClass="SetFileViewController" customModule="Marvel_for_Keynote" customModuleProvider="target" sceneMemberID="viewController">
+                    <customView key="view" id="uyb-CG-CyO" userLabel="View">
+                        <rect key="frame" x="0.0" y="0.0" width="295" height="260"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ih7-Qg-VWw" userLabel="Sync your Keynote file to  a Marvel project." customClass="TitleTextField" customModule="Marvel_for_Keynote" customModuleProvider="target">
+                                <rect key="frame" x="-2" y="62" width="299" height="21"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Presentation.keynote" id="2JW-wC-8JF">
+                                    <font key="font" metaFont="systemMedium" size="17"/>
+                                    <color key="textColor" red="0.14901960780000001" green="0.20392156859999999" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="f69-0S-OyH" customClass="Button" customModule="Marvel_for_Keynote" customModuleProvider="target">
+                                <rect key="frame" x="57" y="34" width="181" height="32"/>
+                                <buttonCell key="cell" type="push" title="Remove the current file" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="87x-ge-d26">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="styleAdapter">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="underlineFrom">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="underlineLength">
+                                        <integer key="value" value="23"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="removeWithButton:" target="anN-9Q-qHV" id="GMA-8o-fe7"/>
+                                </connections>
+                            </button>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C6E-Ds-vBA">
+                                <rect key="frame" x="118" y="108" width="59" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="frM-tz-X7X"/>
+                                    <constraint firstAttribute="width" constant="59" id="l7y-QD-Y9w"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="keynote-file" id="dpt-Xg-x06"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="C6E-Ds-vBA" firstAttribute="top" secondItem="uyb-CG-CyO" secondAttribute="top" constant="75" id="8Ms-LT-LDa"/>
+                            <constraint firstItem="C6E-Ds-vBA" firstAttribute="centerX" secondItem="uyb-CG-CyO" secondAttribute="centerX" id="LzH-Ie-0bf"/>
+                            <constraint firstAttribute="trailing" secondItem="Ih7-Qg-VWw" secondAttribute="trailing" id="O1E-LY-LhY"/>
+                            <constraint firstItem="f69-0S-OyH" firstAttribute="top" secondItem="Ih7-Qg-VWw" secondAttribute="bottom" id="TAF-in-P41"/>
+                            <constraint firstItem="Ih7-Qg-VWw" firstAttribute="top" secondItem="C6E-Ds-vBA" secondAttribute="bottom" constant="25" id="YKE-F6-wo4"/>
+                            <constraint firstItem="f69-0S-OyH" firstAttribute="centerX" secondItem="uyb-CG-CyO" secondAttribute="centerX" id="fKy-OS-OZx"/>
+                            <constraint firstItem="Ih7-Qg-VWw" firstAttribute="leading" secondItem="uyb-CG-CyO" secondAttribute="leading" id="zLd-bN-gAE"/>
+                        </constraints>
+                    </customView>
+                    <connections>
+                        <outlet property="removeFileButton" destination="f69-0S-OyH" id="3zl-dE-NH3"/>
+                        <outlet property="titleTextField" destination="Ih7-Qg-VWw" id="3HS-z1-Q1C"/>
+                    </connections>
+                </viewController>
+                <customObject id="tu0-ck-A1S" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="89" y="1265"/>
+        </scene>
+        <!--Syncing View Controller-->
+        <scene sceneID="yQd-55-MDI">
+            <objects>
+                <viewController id="YPI-5I-6j7" customClass="SyncingViewController" customModule="Marvel_for_Keynote" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="lRx-8E-3HH">
+                        <rect key="frame" x="0.0" y="0.0" width="295" height="391"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Dn-8q-GbQ">
+                                <rect key="frame" x="0.0" y="0.0" width="295" height="391"/>
+                                <subviews>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="Fgi-uM-HVK">
+                                        <rect key="frame" x="0.0" y="140" width="295" height="251"/>
+                                        <subviews>
+                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G8a-G5-o3K">
+                                                <rect key="frame" x="-34" y="-21" width="364" height="273"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="273" id="H3d-Af-hOB"/>
+                                                    <constraint firstAttribute="width" constant="364" id="NrQ-sT-rMW"/>
+                                                </constraints>
+                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" id="QRJ-vX-b8o"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="G8a-G5-o3K" firstAttribute="centerY" secondItem="Fgi-uM-HVK" secondAttribute="centerY" constant="10" id="bYe-N3-PCn"/>
+                                            <constraint firstItem="G8a-G5-o3K" firstAttribute="centerX" secondItem="Fgi-uM-HVK" secondAttribute="centerX" id="sb3-pv-9KV"/>
+                                        </constraints>
+                                    </customView>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="Kno-Sf-GB6">
+                                        <rect key="frame" x="0.0" y="100" width="295" height="40"/>
+                                        <subviews>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qHH-83-K7B" userLabel="Sync your Keynote file to  a Marvel project." customClass="TitleTextField" customModule="Marvel_for_Keynote" customModuleProvider="target">
+                                                <rect key="frame" x="48" y="19" width="199" height="21"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Exporting your images..." id="iSl-uL-9Uv">
+                                                    <font key="font" metaFont="systemMedium" size="17"/>
+                                                    <color key="textColor" red="0.14901960780000001" green="0.20392156859999999" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="qHH-83-K7B" firstAttribute="top" secondItem="Kno-Sf-GB6" secondAttribute="top" id="0kl-1R-ZoY"/>
+                                            <constraint firstItem="qHH-83-K7B" firstAttribute="centerX" secondItem="Kno-Sf-GB6" secondAttribute="centerX" id="fCc-94-Axy"/>
+                                            <constraint firstAttribute="height" constant="40" id="k2e-q1-1Fo"/>
+                                        </constraints>
+                                    </customView>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="EtX-sh-TpQ">
+                                        <rect key="frame" x="0.0" y="60" width="295" height="40"/>
+                                        <subviews>
+                                            <progressIndicator wantsLayer="YES" maxValue="100" doubleValue="20" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="9xM-tY-6en">
+                                                <rect key="frame" x="52" y="21" width="191" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="18" id="6fr-WC-x0M"/>
+                                                    <constraint firstAttribute="width" constant="191" id="eZ0-hb-JRP"/>
+                                                </constraints>
+                                            </progressIndicator>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="9xM-tY-6en" firstAttribute="centerX" secondItem="EtX-sh-TpQ" secondAttribute="centerX" id="IR3-p5-oal"/>
+                                            <constraint firstItem="9xM-tY-6en" firstAttribute="top" secondItem="EtX-sh-TpQ" secondAttribute="top" id="OEr-7e-Luz"/>
+                                            <constraint firstAttribute="height" constant="40" id="xdA-kQ-af9"/>
+                                        </constraints>
+                                    </customView>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="pm5-Wm-umR">
+                                        <rect key="frame" x="0.0" y="0.0" width="295" height="60"/>
+                                        <subviews>
+                                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FR1-yR-IPR" customClass="Button" customModule="Marvel_for_Keynote" customModuleProvider="target">
+                                                <rect key="frame" x="107" y="32" width="82" height="32"/>
+                                                <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="qGx-Gv-6dc">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                    <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                                                </buttonCell>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="styleAdapter">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="underlineFrom">
+                                                        <integer key="value" value="0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="underlineLength">
+                                                        <integer key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="cancelWithSender:" target="YPI-5I-6j7" id="W9j-Al-bKh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="2SZ-cb-8i2"/>
+                                            <constraint firstItem="FR1-yR-IPR" firstAttribute="top" secondItem="pm5-Wm-umR" secondAttribute="top" id="Mok-dX-GVs"/>
+                                            <constraint firstItem="FR1-yR-IPR" firstAttribute="centerX" secondItem="pm5-Wm-umR" secondAttribute="centerX" id="kK8-dI-j49"/>
+                                        </constraints>
+                                    </customView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="391" id="3oP-uU-Msv"/>
+                                    <constraint firstAttribute="width" constant="295" id="6TB-ZS-eDG"/>
+                                    <constraint firstItem="pm5-Wm-umR" firstAttribute="width" secondItem="2Dn-8q-GbQ" secondAttribute="width" id="mgL-bM-RhQ"/>
+                                    <constraint firstItem="EtX-sh-TpQ" firstAttribute="width" secondItem="2Dn-8q-GbQ" secondAttribute="width" id="rZk-dy-i7X"/>
+                                    <constraint firstItem="Kno-Sf-GB6" firstAttribute="width" secondItem="2Dn-8q-GbQ" secondAttribute="width" id="scX-Fh-RyX"/>
+                                    <constraint firstItem="Fgi-uM-HVK" firstAttribute="width" secondItem="2Dn-8q-GbQ" secondAttribute="width" id="tWw-AZ-BWx"/>
+                                </constraints>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="2Dn-8q-GbQ" firstAttribute="top" secondItem="lRx-8E-3HH" secondAttribute="top" id="HQ3-F0-iF3"/>
+                            <constraint firstItem="2Dn-8q-GbQ" firstAttribute="leading" secondItem="lRx-8E-3HH" secondAttribute="leading" id="Rvl-aH-VXV"/>
+                            <constraint firstAttribute="trailing" secondItem="2Dn-8q-GbQ" secondAttribute="trailing" id="lsF-Vv-Irl"/>
+                            <constraint firstAttribute="bottom" secondItem="2Dn-8q-GbQ" secondAttribute="bottom" id="z8N-8U-SKQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animationView" destination="G8a-G5-o3K" id="oYX-Il-gfa"/>
+                        <outlet property="progressIndicator" destination="9xM-tY-6en" id="94v-Ob-yBH"/>
+                        <outlet property="titleTextField" destination="qHH-83-K7B" id="4cC-bw-qMd"/>
+                    </connections>
+                </viewController>
+                <customObject id="04E-OM-iHi" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="439.5" y="1033.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cog" width="16" height="15"/>
+        <image name="keynote-file" width="59" height="77"/>
+        <image name="paper-plane" width="603" height="308.25"/>
+    </resources>
+</document>

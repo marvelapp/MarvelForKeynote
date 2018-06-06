@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14133" systemVersion="17E199" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Token" representedClassName="Token" syncable="YES" codeGenerationType="class">
+        <attribute name="accessToken" attributeType="String" syncable="YES"/>
+        <attribute name="createdAt" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="expiresIn" attributeType="Double" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="refreshToken" attributeType="String" syncable="YES"/>
+        <attribute name="scope" attributeType="String" syncable="YES"/>
+        <attribute name="tokenType" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Token" positionX="-63" positionY="-18" width="128" height="135"/>
+    </elements>
+</model>
