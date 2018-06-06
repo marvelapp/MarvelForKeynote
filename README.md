@@ -4,7 +4,7 @@
 
 Marvel for Keynote is an open-source Mac app to send your Keynote files to [Marvel](https://marvelapp.com) - a design collaboration platform that brings ideas to life.
 
-[Download it here](https://marvelapp.com)
+[Download it here](https://itunes.apple.com/us/app/marvel-for-keynote/id1374331587?mt=12)
 
 **Why it's so amazing**
 
