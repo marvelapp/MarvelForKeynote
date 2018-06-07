@@ -91,6 +91,7 @@ body, html {
   padding-bottom: 4px;
   cursor: pointer;
   align-items: center;
+  text-decoration: none;
 }
 
 .marvel-integration-badge:hover {
