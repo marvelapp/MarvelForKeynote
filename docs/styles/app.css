@@ -36,16 +36,11 @@ body, html {
 .screenshot {
   width: 317px;
   height: 445px;
-  display: block;
-  background-image: url("../images/preview.png");
-  display: inline-block;
 }
 
 .download-button {
   width: 187px;
   height: 56px;
-  background-image: url("../images/mac-app-store.png");
-  display: inline-block;
   margin-top: 10px;
 }
 
@@ -118,11 +113,6 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-
-  .screenshot {
-    background-size: 317px 445px;
-    background-image: url("../images/preview@2x.png");
-  }
 
   .download-button {
     background-size: 187px 56px;
